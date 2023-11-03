@@ -1,0 +1,19 @@
+
+make buildImage
+make pushImage
+make remove
+make deploy
+kubectl get po -n kube-system -o wide | grep recon
+kubectl logs 
+
+kubectl apply -f ../test/pod-with-falcon.yaml
+kubectl apply -f ./test/pod-with-falcon.yaml
+
+kubectl apply -f gpu_test/gpu-pod/gpu-pod.yaml 
+kubectl apply -f my-device-plugin/e2e/pod-with-cola.yaml 
+kubectl apply -f my-device-plugin/e2e/pod-with-cola2.yaml 
+
+make remove
+kubectl delete -f gpu_test/gpu-pod/gpu-pod.yaml 
+kubectl delete -f my-device-plugin/e2e/pod-with-cola.yaml 
+kubectl delete -f my-device-plugin/e2e/pod-with-cola2.yaml 

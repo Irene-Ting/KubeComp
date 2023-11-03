@@ -1,0 +1,21 @@
+2023/09/19 05:42:32 reconfig event: Pod, falcon-pod-09, Reconfig
+getGID in falcon-pod-08, default
+2023/09/19 05:42:38 ready for reconfig
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/09/19 05:42:38 start to reconfig...
+2023/09/19 05:42:38 dst: css-host-129, require: 2
+2023/09/19 05:42:38 usedGPUs: map[0-001300:{} 0-001800:{} 1-002F00:{} 1-004200:{}], optionGPUs: [{0-000C00 48 0} {0-000500 48 0}]
+2023/09/19 05:42:38 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/09/19 05:42:46 unassign result: true
+2023/09/19 05:42:46 assign -> gep: 0, port_gid: 00h, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/09/19 05:43:02 assign result: false
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/09/19 05:43:07 assign double check result: true
+2023/09/19 05:43:07 current demand: 1
+2023/09/19 05:43:07 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/09/19 05:43:13 unassign result: true
+2023/09/19 05:43:13 assign -> gep: 0, port_gid: 00h, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/09/19 05:43:29 assign result: false
+2023/09/19 05:43:34 assign double check result: true
+2023/09/19 05:43:34 current demand: 0
+2023/09/19 05:43:34 reconfig result: true

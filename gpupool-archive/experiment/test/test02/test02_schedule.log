@@ -1,0 +1,405 @@
+2023/09/18 08:12:14 falconresources-scheduler starts!
+I0918 08:12:14.410076       1 flags.go:64] FLAG: --allow-metric-labels="[]"
+I0918 08:12:14.410093       1 flags.go:64] FLAG: --authentication-kubeconfig=""
+I0918 08:12:14.410098       1 flags.go:64] FLAG: --authentication-skip-lookup="false"
+I0918 08:12:14.410101       1 flags.go:64] FLAG: --authentication-token-webhook-cache-ttl="10s"
+I0918 08:12:14.410105       1 flags.go:64] FLAG: --authentication-tolerate-lookup-failure="true"
+I0918 08:12:14.410108       1 flags.go:64] FLAG: --authorization-always-allow-paths="[/healthz,/readyz,/livez]"
+I0918 08:12:14.410115       1 flags.go:64] FLAG: --authorization-kubeconfig=""
+I0918 08:12:14.410117       1 flags.go:64] FLAG: --authorization-webhook-cache-authorized-ttl="10s"
+I0918 08:12:14.410121       1 flags.go:64] FLAG: --authorization-webhook-cache-unauthorized-ttl="10s"
+I0918 08:12:14.410125       1 flags.go:64] FLAG: --bind-address="0.0.0.0"
+I0918 08:12:14.410131       1 flags.go:64] FLAG: --cert-dir=""
+I0918 08:12:14.410134       1 flags.go:64] FLAG: --client-ca-file=""
+I0918 08:12:14.410137       1 flags.go:64] FLAG: --config="/etc/kubernetes/scheduler-config.yaml"
+I0918 08:12:14.410140       1 flags.go:64] FLAG: --contention-profiling="true"
+I0918 08:12:14.410144       1 flags.go:64] FLAG: --disabled-metrics="[]"
+I0918 08:12:14.410148       1 flags.go:64] FLAG: --feature-gates=""
+I0918 08:12:14.410153       1 flags.go:64] FLAG: --help="false"
+I0918 08:12:14.410156       1 flags.go:64] FLAG: --http2-max-streams-per-connection="0"
+I0918 08:12:14.410159       1 flags.go:64] FLAG: --kube-api-burst="100"
+I0918 08:12:14.410163       1 flags.go:64] FLAG: --kube-api-content-type="application/vnd.kubernetes.protobuf"
+I0918 08:12:14.410167       1 flags.go:64] FLAG: --kube-api-qps="50"
+I0918 08:12:14.410172       1 flags.go:64] FLAG: --kubeconfig=""
+I0918 08:12:14.410175       1 flags.go:64] FLAG: --leader-elect="true"
+I0918 08:12:14.410178       1 flags.go:64] FLAG: --leader-elect-lease-duration="15s"
+I0918 08:12:14.410181       1 flags.go:64] FLAG: --leader-elect-renew-deadline="10s"
+I0918 08:12:14.410184       1 flags.go:64] FLAG: --leader-elect-resource-lock="leases"
+I0918 08:12:14.410188       1 flags.go:64] FLAG: --leader-elect-resource-name="kube-scheduler"
+I0918 08:12:14.410191       1 flags.go:64] FLAG: --leader-elect-resource-namespace="kube-system"
+I0918 08:12:14.410195       1 flags.go:64] FLAG: --leader-elect-retry-period="2s"
+I0918 08:12:14.410199       1 flags.go:64] FLAG: --lock-object-name="kube-scheduler"
+I0918 08:12:14.410202       1 flags.go:64] FLAG: --lock-object-namespace="kube-system"
+I0918 08:12:14.410205       1 flags.go:64] FLAG: --log-flush-frequency="5s"
+I0918 08:12:14.410208       1 flags.go:64] FLAG: --logging-format="text"
+I0918 08:12:14.410212       1 flags.go:64] FLAG: --master=""
+I0918 08:12:14.410215       1 flags.go:64] FLAG: --permit-address-sharing="false"
+I0918 08:12:14.410217       1 flags.go:64] FLAG: --permit-port-sharing="false"
+I0918 08:12:14.410220       1 flags.go:64] FLAG: --pod-max-in-unschedulable-pods-duration="5m0s"
+I0918 08:12:14.410224       1 flags.go:64] FLAG: --profiling="true"
+I0918 08:12:14.410227       1 flags.go:64] FLAG: --requestheader-allowed-names="[]"
+I0918 08:12:14.410231       1 flags.go:64] FLAG: --requestheader-client-ca-file=""
+I0918 08:12:14.410234       1 flags.go:64] FLAG: --requestheader-extra-headers-prefix="[x-remote-extra-]"
+I0918 08:12:14.410241       1 flags.go:64] FLAG: --requestheader-group-headers="[x-remote-group]"
+I0918 08:12:14.410245       1 flags.go:64] FLAG: --requestheader-username-headers="[x-remote-user]"
+I0918 08:12:14.410250       1 flags.go:64] FLAG: --secure-port="10259"
+I0918 08:12:14.410253       1 flags.go:64] FLAG: --show-hidden-metrics-for-version=""
+I0918 08:12:14.410256       1 flags.go:64] FLAG: --tls-cert-file=""
+I0918 08:12:14.410259       1 flags.go:64] FLAG: --tls-cipher-suites="[]"
+I0918 08:12:14.410262       1 flags.go:64] FLAG: --tls-min-version=""
+I0918 08:12:14.410266       1 flags.go:64] FLAG: --tls-private-key-file=""
+I0918 08:12:14.410269       1 flags.go:64] FLAG: --tls-sni-cert-key="[]"
+I0918 08:12:14.410291       1 flags.go:64] FLAG: --v="2"
+I0918 08:12:14.410295       1 flags.go:64] FLAG: --version="false"
+I0918 08:12:14.410304       1 flags.go:64] FLAG: --vmodule=""
+I0918 08:12:14.410308       1 flags.go:64] FLAG: --write-config-to=""
+I0918 08:12:14.648188       1 serving.go:348] Generated self-signed cert in-memory
+I0918 08:12:14.649099       1 configfile.go:59] "KubeSchedulerConfiguration v1beta3 is deprecated in v1.26, will be removed in v1.29"
+W0918 08:12:14.649179       1 client_config.go:618] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0918 08:12:15.242509       1 requestheader_controller.go:244] Loaded a new request header values for RequestHeaderAuthRequestController
+I0918 08:12:15.255556       1 configfile.go:105] "Using component config" config=<
+	apiVersion: kubescheduler.config.k8s.io/v1beta3
+	clientConnection:
+	  acceptContentTypes: ""
+	  burst: 100
+	  contentType: application/vnd.kubernetes.protobuf
+	  kubeconfig: ""
+	  qps: 50
+	enableContentionProfiling: true
+	enableProfiling: true
+	kind: KubeSchedulerConfiguration
+	leaderElection:
+	  leaderElect: false
+	  leaseDuration: 15s
+	  renewDeadline: 10s
+	  resourceLock: leases
+	  resourceName: kube-scheduler
+	  resourceNamespace: kube-system
+	  retryPeriod: 2s
+	parallelism: 16
+	percentageOfNodesToScore: 0
+	podInitialBackoffSeconds: 1
+	podMaxBackoffSeconds: 10
+	profiles:
+	- pluginConfig:
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      kind: DefaultPreemptionArgs
+	      minCandidateNodesAbsolute: 100
+	      minCandidateNodesPercentage: 10
+	    name: DefaultPreemption
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      hardPodAffinityWeight: 1
+	      ignorePreferredTermsOfExistingPods: false
+	      kind: InterPodAffinityArgs
+	    name: InterPodAffinity
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      kind: NodeAffinityArgs
+	    name: NodeAffinity
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      kind: NodeResourcesBalancedAllocationArgs
+	      resources:
+	      - name: cpu
+	        weight: 1
+	      - name: memory
+	        weight: 1
+	    name: NodeResourcesBalancedAllocation
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      ignoredResourceGroups:
+	      - falcon.com
+	      kind: NodeResourcesFitArgs
+	      scoringStrategy:
+	        resources:
+	        - name: cpu
+	          weight: 1
+	        - name: memory
+	          weight: 1
+	        type: LeastAllocated
+	    name: NodeResourcesFit
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      defaultingType: System
+	      kind: PodTopologySpreadArgs
+	    name: PodTopologySpread
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      bindTimeoutSeconds: 600
+	      kind: VolumeBindingArgs
+	    name: VolumeBinding
+	  plugins:
+	    bind: {}
+	    filter: {}
+	    multiPoint:
+	      enabled:
+	      - name: PrioritySort
+	        weight: 0
+	      - name: NodeUnschedulable
+	        weight: 0
+	      - name: NodeName
+	        weight: 0
+	      - name: TaintToleration
+	        weight: 3
+	      - name: NodeAffinity
+	        weight: 2
+	      - name: NodePorts
+	        weight: 0
+	      - name: NodeResourcesFit
+	        weight: 1
+	      - name: VolumeRestrictions
+	        weight: 0
+	      - name: EBSLimits
+	        weight: 0
+	      - name: GCEPDLimits
+	        weight: 0
+	      - name: NodeVolumeLimits
+	        weight: 0
+	      - name: AzureDiskLimits
+	        weight: 0
+	      - name: VolumeBinding
+	        weight: 0
+	      - name: VolumeZone
+	        weight: 0
+	      - name: PodTopologySpread
+	        weight: 2
+	      - name: InterPodAffinity
+	        weight: 2
+	      - name: DefaultPreemption
+	        weight: 0
+	      - name: NodeResourcesBalancedAllocation
+	        weight: 1
+	      - name: ImageLocality
+	        weight: 1
+	      - name: DefaultBinder
+	        weight: 0
+	      - name: SchedulingGates
+	        weight: 0
+	      - name: FalconResources
+	        weight: 0
+	    permit: {}
+	    postBind: {}
+	    postFilter: {}
+	    preBind: {}
+	    preEnqueue: {}
+	    preFilter: {}
+	    preScore: {}
+	    queueSort: {}
+	    reserve: {}
+	    score: {}
+	  schedulerName: my-scheduler
+ >
+I0918 08:12:15.256054       1 server.go:154] "Starting Kubernetes Scheduler" version="v0.0.0-master+$Format:%H$"
+I0918 08:12:15.256071       1 server.go:156] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0918 08:12:15.261444       1 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I0918 08:12:15.261519       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I0918 08:12:15.261548       1 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I0918 08:12:15.261438       1 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I0918 08:12:15.261672       1 shared_informer.go:311] Waiting for caches to sync for RequestHeaderAuthRequestController
+I0918 08:12:15.261691       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I0918 08:12:15.261865       1 tlsconfig.go:200] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1695024734\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1695024734\" (2023-09-18 07:12:14 +0000 UTC to 2024-09-17 07:12:14 +0000 UTC (now=2023-09-18 08:12:15.261818086 +0000 UTC))"
+I0918 08:12:15.262369       1 named_certificates.go:53] "Loaded SNI cert" index=0 certName="self-signed loopback" certDetail="\"apiserver-loopback-client@1695024735\" [serving] validServingFor=[apiserver-loopback-client] issuer=\"apiserver-loopback-client-ca@1695024734\" (2023-09-18 07:12:14 +0000 UTC to 2024-09-17 07:12:14 +0000 UTC (now=2023-09-18 08:12:15.262341036 +0000 UTC))"
+I0918 08:12:15.262405       1 secure_serving.go:210] Serving securely on [::]:10259
+I0918 08:12:15.262455       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I0918 08:12:15.272286       1 node_tree.go:65] "Added node in listed group to NodeTree" node="css-host-128" zone=""
+I0918 08:12:15.272573       1 node_tree.go:65] "Added node in listed group to NodeTree" node="css-host-129" zone=""
+I0918 08:12:15.362223       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I0918 08:12:15.362271       1 shared_informer.go:318] Caches are synced for RequestHeaderAuthRequestController
+I0918 08:12:15.362301       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I0918 08:12:15.362606       1 tlsconfig.go:178] "Loaded client CA" index=0 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"front-proxy-ca\" [] validServingFor=[front-proxy-ca] issuer=\"<self>\" (2023-02-25 05:20:25 +0000 UTC to 2033-02-22 05:20:25 +0000 UTC (now=2023-09-18 08:12:15.36255331 +0000 UTC))"
+I0918 08:12:15.363336       1 tlsconfig.go:200] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1695024734\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1695024734\" (2023-09-18 07:12:14 +0000 UTC to 2024-09-17 07:12:14 +0000 UTC (now=2023-09-18 08:12:15.363302154 +0000 UTC))"
+I0918 08:12:15.364012       1 named_certificates.go:53] "Loaded SNI cert" index=0 certName="self-signed loopback" certDetail="\"apiserver-loopback-client@1695024735\" [serving] validServingFor=[apiserver-loopback-client] issuer=\"apiserver-loopback-client-ca@1695024734\" (2023-09-18 07:12:14 +0000 UTC to 2024-09-17 07:12:14 +0000 UTC (now=2023-09-18 08:12:15.363981016 +0000 UTC))"
+I0918 08:12:15.364139       1 tlsconfig.go:178] "Loaded client CA" index=0 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"kubernetes\" [] validServingFor=[kubernetes] issuer=\"<self>\" (2023-02-25 05:20:24 +0000 UTC to 2033-02-22 05:20:24 +0000 UTC (now=2023-09-18 08:12:15.364108025 +0000 UTC))"
+I0918 08:12:15.364181       1 tlsconfig.go:178] "Loaded client CA" index=1 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"front-proxy-ca\" [] validServingFor=[front-proxy-ca] issuer=\"<self>\" (2023-02-25 05:20:25 +0000 UTC to 2033-02-22 05:20:25 +0000 UTC (now=2023-09-18 08:12:15.364155123 +0000 UTC))"
+I0918 08:12:15.364884       1 tlsconfig.go:200] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1695024734\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1695024734\" (2023-09-18 07:12:14 +0000 UTC to 2024-09-17 07:12:14 +0000 UTC (now=2023-09-18 08:12:15.364857319 +0000 UTC))"
+I0918 08:12:15.365538       1 named_certificates.go:53] "Loaded SNI cert" index=0 certName="self-signed loopback" certDetail="\"apiserver-loopback-client@1695024735\" [serving] validServingFor=[apiserver-loopback-client] issuer=\"apiserver-loopback-client-ca@1695024734\" (2023-09-18 07:12:14 +0000 UTC to 2024-09-17 07:12:14 +0000 UTC (now=2023-09-18 08:12:15.365508019 +0000 UTC))"
+I0918 08:14:18.914171       1 log.go:194] falcon-pod-502950 in Prefilter
+I0918 08:14:18.914750       1 log.go:194] falcon-pod-502950 requires 2 gpu(s), and currently has 8 gpus(s) in total
+I0918 08:14:18.924925       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-502950 requires 2 gpu -> score: 50
+I0918 08:14:18.924970       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-502950 requires 2 gpu -> score: 50
+I0918 08:14:18.930274       1 log.go:194] css-host-128 -> alloc: 4, used: 0, required: 2
+I0918 08:14:18.935016       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-502950" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I0918 08:14:42.177779       1 log.go:194] falcon-pod-399023 in Prefilter
+I0918 08:14:42.178282       1 log.go:194] falcon-pod-399023 requires 2 gpu(s), and currently has 6 gpus(s) in total
+I0918 08:14:42.186129       1 log.go:194] css-host-128 has 2 gpu, falcon-pod-399023 requires 2 gpu -> score: 100
+I0918 08:14:42.186173       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-399023 requires 2 gpu -> score: 50
+I0918 08:14:42.191607       1 log.go:194] css-host-128 -> alloc: 4, used: 2, required: 2
+I0918 08:14:42.194709       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-399023" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I0918 08:15:20.461921       1 log.go:194] falcon-pod-593250 in Prefilter
+I0918 08:15:20.462293       1 log.go:194] falcon-pod-593250 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I0918 08:15:20.471277       1 log.go:194] css-host-128 has 0 gpu, falcon-pod-593250 requires 4 gpu -> score: -4
+I0918 08:15:20.471319       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-593250 requires 4 gpu -> score: 100
+I0918 08:15:20.476559       1 log.go:194] css-host-129 -> alloc: 4, used: 0, required: 4
+I0918 08:15:20.480735       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-593250" node="css-host-129" evaluatedNodes=2 feasibleNodes=2
+I0918 08:15:46.745075       1 log.go:194] falcon-pod-581104 in Prefilter
+I0918 08:15:46.745609       1 log.go:194] falcon-pod-581104 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:15:46.753123       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-581104" err="0/2 nodes are available: falcon-pod-581104 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+E0918 08:15:46.753221       1 schedule_one.go:902] "Error occurred" err="Pod default/falcon-pod-581104 is already present in the active queue"
+I0918 08:15:46.761160       1 log.go:194] falcon-pod-581104 in Prefilter
+I0918 08:15:46.761550       1 log.go:194] falcon-pod-581104 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:15:46.767722       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-581104" err="0/2 nodes are available: falcon-pod-581104 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:16:23.027153       1 log.go:194] falcon-pod-381278 in Prefilter
+I0918 08:16:23.027648       1 log.go:194] falcon-pod-381278 requires 2 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:16:23.036218       1 log.go:194] css-host-128 has 2 gpu, falcon-pod-381278 requires 2 gpu -> score: 100
+I0918 08:16:23.036266       1 log.go:194] css-host-129 has 0 gpu, falcon-pod-381278 requires 2 gpu -> score: -2
+I0918 08:16:23.041169       1 log.go:194] css-host-128 -> alloc: 4, used: 2, required: 2
+I0918 08:16:23.045073       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-381278" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I0918 08:16:52.324438       1 log.go:194] falcon-pod-867106 in Prefilter
+I0918 08:16:52.324904       1 log.go:194] falcon-pod-867106 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:16:52.331631       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-867106" err="0/2 nodes are available: falcon-pod-867106 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+E0918 08:16:52.331718       1 schedule_one.go:902] "Error occurred" err="Pod default/falcon-pod-867106 is already present in the active queue"
+I0918 08:16:52.336491       1 log.go:194] falcon-pod-867106 in Prefilter
+I0918 08:16:52.336832       1 log.go:194] falcon-pod-867106 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:16:52.342606       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-867106" err="0/2 nodes are available: falcon-pod-867106 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:17:20.817778       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:17:20.818274       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:17:20.825043       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+E0918 08:17:20.825157       1 schedule_one.go:902] "Error occurred" err="Pod default/falcon-pod-398210 is already present in the active queue"
+I0918 08:17:20.831805       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:17:20.832233       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:17:20.838349       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+E0918 08:17:20.838479       1 schedule_one.go:902] "Error occurred" err="Pod default/falcon-pod-398210 is already present in the active queue"
+I0918 08:17:20.843913       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:17:20.844263       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:17:20.848997       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:17:49.894364       1 log.go:194] falcon-pod-519337 in Prefilter
+I0918 08:17:49.894846       1 log.go:194] falcon-pod-519337 requires 2 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:17:49.901583       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-519337" err="0/2 nodes are available: falcon-pod-519337 requires 2 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+E0918 08:17:49.901670       1 schedule_one.go:902] "Error occurred" err="Pod default/falcon-pod-519337 is already present in the active queue"
+I0918 08:17:49.912961       1 log.go:194] falcon-pod-519337 in Prefilter
+I0918 08:17:49.913436       1 log.go:194] falcon-pod-519337 requires 2 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:17:49.919511       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-519337" err="0/2 nodes are available: falcon-pod-519337 requires 2 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+E0918 08:17:49.919601       1 schedule_one.go:902] "Error occurred" err="Pod default/falcon-pod-519337 is already present in the active queue"
+I0918 08:17:49.924818       1 log.go:194] falcon-pod-519337 in Prefilter
+I0918 08:17:49.925161       1 log.go:194] falcon-pod-519337 requires 2 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:17:49.930791       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-519337" err="0/2 nodes are available: falcon-pod-519337 requires 2 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:18:24.180548       1 log.go:194] falcon-pod-534716 in Prefilter
+I0918 08:18:24.180998       1 log.go:194] falcon-pod-534716 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:18:24.188444       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-534716" err="0/2 nodes are available: falcon-pod-534716 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+E0918 08:18:24.188513       1 schedule_one.go:902] "Error occurred" err="Pod default/falcon-pod-534716 is already present in the active queue"
+I0918 08:18:24.194162       1 log.go:194] falcon-pod-534716 in Prefilter
+I0918 08:18:24.194673       1 log.go:194] falcon-pod-534716 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:18:24.199580       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-534716" err="0/2 nodes are available: falcon-pod-534716 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:18:35.860146       1 log.go:194] falcon-pod-581104 in Prefilter
+I0918 08:18:35.860601       1 log.go:194] falcon-pod-581104 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:18:35.865298       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-581104" err="0/2 nodes are available: falcon-pod-581104 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:18:35.865476       1 log.go:194] falcon-pod-867106 in Prefilter
+I0918 08:18:35.865858       1 log.go:194] falcon-pod-867106 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:18:35.870174       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-867106" err="0/2 nodes are available: falcon-pod-867106 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:18:35.875384       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:18:35.875750       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:18:35.880702       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:18:35.886798       1 log.go:194] falcon-pod-519337 in Prefilter
+I0918 08:18:35.887122       1 log.go:194] falcon-pod-519337 requires 2 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:18:35.893153       1 log.go:194] css-host-128 has 2 gpu, falcon-pod-519337 requires 2 gpu -> score: 100
+I0918 08:18:35.893178       1 log.go:194] css-host-129 has 0 gpu, falcon-pod-519337 requires 2 gpu -> score: -2
+I0918 08:18:35.897874       1 log.go:194] css-host-128 -> alloc: 4, used: 2, required: 2
+I0918 08:18:35.898018       1 log.go:194] falcon-pod-534716 in Prefilter
+I0918 08:18:35.898441       1 log.go:194] falcon-pod-534716 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:18:35.901984       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-519337" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I0918 08:18:35.903311       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-534716" err="0/2 nodes are available: falcon-pod-534716 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:18:38.569724       1 log.go:194] falcon-pod-534716 in Prefilter
+I0918 08:18:38.570101       1 log.go:194] falcon-pod-534716 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:18:38.577201       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-534716" err="0/2 nodes are available: falcon-pod-534716 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:18:58.476536       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:18:58.477025       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:18:58.483640       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+E0918 08:18:58.483786       1 schedule_one.go:902] "Error occurred" err="Pod default/falcon-pod-458562 is already present in the active queue"
+I0918 08:18:58.488550       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:18:58.488921       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:18:58.493576       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:20:29.421807       1 log.go:194] falcon-pod-581104 in Prefilter
+I0918 08:20:29.422294       1 log.go:194] falcon-pod-581104 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:20:29.428870       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-581104" err="0/2 nodes are available: falcon-pod-581104 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:20:29.429040       1 log.go:194] falcon-pod-867106 in Prefilter
+I0918 08:20:29.429404       1 log.go:194] falcon-pod-867106 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:20:29.434966       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-867106" err="0/2 nodes are available: falcon-pod-867106 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:20:29.435137       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:20:29.435487       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:20:29.440213       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:20:29.440386       1 log.go:194] falcon-pod-534716 in Prefilter
+I0918 08:20:29.440882       1 log.go:194] falcon-pod-534716 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:20:29.446593       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-534716" err="0/2 nodes are available: falcon-pod-534716 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:20:29.452946       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:20:29.453330       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 2 gpus(s) in total
+I0918 08:20:29.457902       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 2 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:24:36.481802       1 log.go:194] falcon-pod-581104 in Prefilter
+I0918 08:24:36.482318       1 log.go:194] falcon-pod-581104 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I0918 08:24:36.490419       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-581104 requires 4 gpu -> score: 100
+I0918 08:24:36.490449       1 log.go:194] css-host-129 has 0 gpu, falcon-pod-581104 requires 4 gpu -> score: -4
+I0918 08:24:36.495484       1 log.go:194] css-host-128 -> alloc: 4, used: 0, required: 4
+I0918 08:24:36.495620       1 log.go:194] falcon-pod-867106 in Prefilter
+I0918 08:24:36.495942       1 log.go:194] falcon-pod-867106 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:24:36.500669       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-581104" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I0918 08:24:36.502570       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-867106" err="0/2 nodes are available: falcon-pod-867106 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:24:36.508853       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:24:36.509185       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:24:36.514229       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:24:36.521813       1 log.go:194] falcon-pod-534716 in Prefilter
+I0918 08:24:36.522283       1 log.go:194] falcon-pod-534716 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:24:36.527790       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-534716" err="0/2 nodes are available: falcon-pod-534716 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:24:36.534255       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:24:36.534688       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:24:36.540307       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:24:44.805347       1 log.go:194] falcon-pod-867106 in Prefilter
+I0918 08:24:44.805854       1 log.go:194] falcon-pod-867106 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:24:44.825294       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-867106" err="0/2 nodes are available: falcon-pod-867106 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:24:44.825439       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:24:44.825789       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:24:44.831894       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:26:18.241366       1 log.go:194] falcon-pod-534716 in Prefilter
+I0918 08:26:18.241936       1 log.go:194] falcon-pod-534716 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I0918 08:26:18.247377       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-534716 requires 4 gpu -> score: 100
+I0918 08:26:18.247420       1 log.go:194] css-host-129 has 0 gpu, falcon-pod-534716 requires 4 gpu -> score: -4
+I0918 08:26:18.252501       1 log.go:194] css-host-128 -> alloc: 4, used: 0, required: 4
+I0918 08:26:18.252626       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:26:18.252968       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:26:18.256229       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-534716" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I0918 08:26:18.257535       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:26:18.257693       1 log.go:194] falcon-pod-867106 in Prefilter
+I0918 08:26:18.258022       1 log.go:194] falcon-pod-867106 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:26:18.263584       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-867106" err="0/2 nodes are available: falcon-pod-867106 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:26:18.263771       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:26:18.264281       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:26:18.269036       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:26:26.871938       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:26:26.872233       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:26:26.877962       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:26:28.873416       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:26:28.873777       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:26:28.880772       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:29:35.791221       1 log.go:194] falcon-pod-867106 in Prefilter
+I0918 08:29:35.791791       1 log.go:194] falcon-pod-867106 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I0918 08:29:35.798680       1 log.go:194] css-host-128 has 0 gpu, falcon-pod-867106 requires 4 gpu -> score: -4
+I0918 08:29:35.798721       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-867106 requires 4 gpu -> score: 100
+I0918 08:29:35.802793       1 log.go:194] css-host-129 -> alloc: 4, used: 0, required: 4
+I0918 08:29:35.802908       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:29:35.803267       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:29:35.806636       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-867106" node="css-host-129" evaluatedNodes=2 feasibleNodes=2
+I0918 08:29:35.807659       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:29:35.807841       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:29:35.808333       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:29:35.814680       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-398210" err="0/2 nodes are available: falcon-pod-398210 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:29:46.009402       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:29:46.009788       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:29:46.017520       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:31:22.665086       1 log.go:194] falcon-pod-398210 in Prefilter
+I0918 08:31:22.665632       1 log.go:194] falcon-pod-398210 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I0918 08:31:22.674183       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-398210 requires 4 gpu -> score: 100
+I0918 08:31:22.674288       1 log.go:194] css-host-129 has 0 gpu, falcon-pod-398210 requires 4 gpu -> score: -4
+I0918 08:31:22.679214       1 log.go:194] css-host-128 -> alloc: 4, used: 0, required: 4
+I0918 08:31:22.679323       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:31:22.679657       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:31:22.683590       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-398210" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I0918 08:31:22.685912       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:31:33.077492       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:31:33.077998       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 0 gpus(s) in total
+I0918 08:31:33.084927       1 schedule_one.go:867] "Unable to schedule pod; no fit; waiting" pod="default/falcon-pod-458562" err="0/2 nodes are available: falcon-pod-458562 requires 4 gpu but only 0 gpu in the pool.. preemption: 0/2 nodes are available: 2 No preemption victims found for incoming pod.."
+I0918 08:32:08.902686       1 log.go:194] falcon-pod-458562 in Prefilter
+I0918 08:32:08.903135       1 log.go:194] falcon-pod-458562 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I0918 08:32:08.910041       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-458562 requires 4 gpu -> score: 100
+I0918 08:32:08.910072       1 log.go:194] css-host-128 has 0 gpu, falcon-pod-458562 requires 4 gpu -> score: -4
+I0918 08:32:08.913705       1 log.go:194] css-host-129 -> alloc: 4, used: 0, required: 4
+I0918 08:32:08.916933       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-458562" node="css-host-129" evaluatedNodes=2 feasibleNodes=2

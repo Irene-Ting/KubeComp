@@ -1,0 +1,79 @@
+dev: map[0-000500:48 0-000C00:48 0-001300:48 0-001800:48 1-000500:48 1-000C00:48 1-001300:48 1-001800:48]
+2023/10/13 13:41:33 reconfig event: Pod, falcon-pod-01, Reconfig
+2023/10/13 13:41:36 update GPU availability: 2.798540995s
+dst: css-host-128, require: 1
+dev: map[0-000500:48 0-000C00:48 0-001300:0 0-001800:0 1-000500:48 1-000C00:48 1-001300:0 1-001800:0]
+2023/10/13 13:41:38 update device duration: 1.239942478s
+usedGPUs: map[], optionGPUs: [{0-001300 0 0} {0-001800 0 0} {1-001300 0 0} {1-001800 0 0}]
+unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/13 13:41:44 unassign duration: 6.471043593s
+assign -> gep: 0, port_gid: 30h, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/13 13:41:56 assign duration: 11.755190123s
+2023/10/13 13:41:56 reconfig total time: 22.664421498s
+current demand: 0
+2023/10/13 13:49:32 reconfig event: Pod, falcon-pod-03, Reconfig
+2023/10/13 13:49:32 update GPU availability: 169.212891ms
+dst: css-host-129, require: 1
+2023/10/13 13:49:34 update device duration: 2.331335117s
+dev: map[0-000500:48 0-000C00:48 0-001300:48 0-001800:0 1-000500:48 1-000C00:48 1-001300:0 1-001800:0]
+usedGPUs: map[0-000500:{} 0-001300:{} 1-000500:{} 1-000C00:{}], optionGPUs: [{0-000C00 48 0}]
+unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/13 13:49:39 unassign duration: 5.010989868s
+assign -> gep: 0, port_gid: 00h, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/13 13:49:46 assign duration: 6.891703467s
+2023/10/13 13:49:46 reconfig total time: 14.407155274s
+current demand: 0
+2023/10/13 13:59:23 reconfig event: Pod, falcon-pod-01, Reconfig
+2023/10/13 13:59:23 update GPU availability: 26.706287ms
+dst: css-host-128, require: 1
+2023/10/13 13:59:24 update device duration: 997.312591ms
+dev: map[0-000500:48 0-000C00:0 0-001300:48 0-001800:0 1-000500:48 1-000C00:48 1-001300:0 1-001800:0]
+usedGPUs: map[], optionGPUs: [{0-001800 0 0} {0-000C00 0 0} {1-001300 0 0} {1-001800 0 0}]
+unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+assign -> gep: 0, port_gid: 30h, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/13 13:59:30 unassign duration: 5.278199473s
+2023/10/13 13:59:36 assign duration: 6.009810081s
+2023/10/13 13:59:36 reconfig total time: 12.316188011s
+current demand: 0
+2023/10/13 14:10:59 reconfig event: Pod, falcon-pod-03, Reconfig
+2023/10/13 14:10:59 update GPU availability: 450.518621ms
+dst: css-host-129, require: 1
+dev: map[0-000500:48 0-000C00:0 0-001300:48 0-001800:48 1-000500:48 1-000C00:48 1-001300:0 1-001800:0]
+usedGPUs: map[0-000500:{} 0-001300:{} 1-000500:{} 1-000C00:{}], optionGPUs: [{0-001800 48 0}]
+2023/10/13 14:11:01 update device duration: 1.310887427s
+unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/13 14:11:06 unassign duration: 5.449314152s
+assign -> gep: 0, port_gid: 00h, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/13 14:11:12 assign duration: 6.224522536s
+2023/10/13 14:11:12 reconfig total time: 13.439770707s
+current demand: 0
+2023/10/13 14:13:16 reconfig event: Pod, falcon-pod-01, Reconfig
+2023/10/13 14:13:16 update GPU availability: 30.991893ms
+dst: css-host-128, require: 1
+2023/10/13 14:13:19 update device duration: 2.991360959s
+dev: map[0-000500:48 0-000C00:0 0-001300:48 0-001800:0 1-000500:48 1-000C00:48 1-001300:0 1-001800:0]
+usedGPUs: map[], optionGPUs: [{1-001300 0 0} {1-001800 0 0} {0-001800 0 0} {0-000C00 0 0}]
+unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/13 14:13:26 unassign duration: 6.086896657s
+assign -> gep: 0, port_gid: 30h, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/13 14:13:34 assign duration: 7.986569432s
+2023/10/13 14:13:34 reconfig total time: 17.099863302s
+current demand: 0
+2023/10/13 14:15:27 reconfig event: Pod, falcon-pod-03, Reconfig
+2023/10/13 14:15:27 update GPU availability: 234.987742ms
+dst: css-host-129, require: 1
+dev: map[0-000500:48 0-000C00:0 0-001300:48 0-001800:0 1-000500:48 1-000C00:48 1-001300:48 1-001800:0]
+usedGPUs: map[0-000500:{} 0-001300:{} 1-000C00:{} 1-001300:{}], optionGPUs: [{1-000500 48 0}]
+unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/13 14:15:32 update device duration: 4.278506404s
+2023/10/13 14:15:38 unassign duration: 6.568397123s
+assign -> gep: 0, port_gid: 00h, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/13 14:15:49 assign duration: 10.532345162s
+2023/10/13 14:15:49 reconfig total time: 21.618751377s
+current demand: 0
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x178 pc=0x1313468]
+
+goroutine 1 [running]:
+main.main()
+	/home/lsalab/gpupool-with-k8s/reconfig_daemon/main.go:637 +0x208

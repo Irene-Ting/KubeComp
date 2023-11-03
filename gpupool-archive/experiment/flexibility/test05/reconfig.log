@@ -1,0 +1,393 @@
+2023/10/15 12:18:22 reconfig event: Pod, falcon-pod-a03, Reconfig
+2023/10/15 12:18:22 reconfig event: Pod, falcon-pod-a03, Reconfig
+2023/10/15 12:18:27 update GPU availability: 5.197593992s
+2023/10/15 12:18:30 update device duration: 2.710330318s
+2023/10/15 12:18:37 unassign duration: 6.924480386s
+2023/10/15 12:18:53 assign duration: 16.196752206s
+2023/10/15 12:18:53 reconfig total time: 31.428781981s
+2023/10/15 12:18:22 reconfig event: Pod, falcon-pod-a03, Reconfig
+2023/10/15 12:18:27 update GPU availability: 5.197593992s
+2023/10/15 12:18:30 update device duration: 2.710330318s
+2023/10/15 12:18:37 unassign duration: 6.924480386s
+2023/10/15 12:18:53 assign duration: 16.196752206s
+2023/10/15 12:18:53 reconfig total time: 31.428781981s
+2023/10/15 12:18:22 reconfig event: Pod, falcon-pod-a03, Reconfig
+2023/10/15 12:18:27 update GPU availability: 5.197593992s
+2023/10/15 12:18:30 update device duration: 2.710330318s
+2023/10/15 12:18:37 unassign duration: 6.924480386s
+2023/10/15 12:18:53 assign duration: 16.196752206s
+2023/10/15 12:18:53 reconfig total time: 31.428781981s
+2023/10/15 12:24:07 reconfig event: Pod, falcon-pod-d01, Reconfig
+2023/10/15 12:24:08 update GPU availability: 927.087269ms
+2023/10/15 12:24:12 update device duration: 3.657192422s
+2023/10/15 12:24:20 unassign duration: 7.559866538s
+2023/10/15 12:24:36 assign duration: 16.526097939s
+2023/10/15 12:24:36 reconfig total time: 28.942282444s
+2023/10/15 12:18:22 reconfig event: Pod, falcon-pod-a03, Reconfig
+2023/10/15 12:18:27 update GPU availability: 5.197593992s
+2023/10/15 12:18:30 update device duration: 2.710330318s
+2023/10/15 12:18:37 unassign duration: 6.924480386s
+2023/10/15 12:18:53 assign duration: 16.196752206s
+2023/10/15 12:18:53 reconfig total time: 31.428781981s
+2023/10/15 12:24:07 reconfig event: Pod, falcon-pod-d01, Reconfig
+2023/10/15 12:24:08 update GPU availability: 927.087269ms
+2023/10/15 12:24:12 update device duration: 3.657192422s
+2023/10/15 12:24:20 unassign duration: 7.559866538s
+2023/10/15 12:24:36 assign duration: 16.526097939s
+2023/10/15 12:24:36 reconfig total time: 28.942282444s
+2023/10/15 12:18:22 reconfig event: Pod, falcon-pod-a03, Reconfig
+2023/10/15 12:18:27 update GPU availability: 5.197593992s
+2023/10/15 12:18:30 update device duration: 2.710330318s
+2023/10/15 12:18:37 unassign duration: 6.924480386s
+2023/10/15 12:18:53 assign duration: 16.196752206s
+2023/10/15 12:18:53 reconfig total time: 31.428781981s
+2023/10/15 12:24:07 reconfig event: Pod, falcon-pod-d01, Reconfig
+2023/10/15 12:24:08 update GPU availability: 927.087269ms
+2023/10/15 12:24:12 update device duration: 3.657192422s
+2023/10/15 12:24:20 unassign duration: 7.559866538s
+2023/10/15 12:24:36 assign duration: 16.526097939s
+2023/10/15 12:24:36 reconfig total time: 28.942282444s
+2023/10/15 12:28:24 reconfig event: Pod, falcon-pod-a04, Reconfig
+2023/10/15 12:18:37 unassign duration: 6.924480386s
+2023/10/15 12:18:53 assign duration: 16.196752206s
+2023/10/15 12:18:53 reconfig total time: 31.428781981s
+2023/10/15 12:24:07 reconfig event: Pod, falcon-pod-d01, Reconfig
+2023/10/15 12:24:08 update GPU availability: 927.087269ms
+2023/10/15 12:24:12 update device duration: 3.657192422s
+2023/10/15 12:24:20 unassign duration: 7.559866538s
+2023/10/15 12:24:36 assign duration: 16.526097939s
+2023/10/15 12:24:36 reconfig total time: 28.942282444s
+2023/10/15 12:28:24 reconfig event: Pod, falcon-pod-a04, Reconfig
+2023/10/15 12:28:25 update GPU availability: 270.572921ms
+2023/10/15 12:28:26 update device duration: 1.334106408s
+2023/10/15 12:28:32 unassign duration: 5.515064818s
+2023/10/15 12:28:43 assign duration: 11.010397422s
+2023/10/15 12:28:43 reconfig total time: 18.259999108s
+2023/10/15 12:18:37 unassign duration: 6.924480386s
+2023/10/15 12:18:53 assign duration: 16.196752206s
+2023/10/15 12:18:53 reconfig total time: 31.428781981s
+2023/10/15 12:24:07 reconfig event: Pod, falcon-pod-d01, Reconfig
+2023/10/15 12:24:08 update GPU availability: 927.087269ms
+2023/10/15 12:24:12 update device duration: 3.657192422s
+2023/10/15 12:24:20 unassign duration: 7.559866538s
+2023/10/15 12:24:36 assign duration: 16.526097939s
+2023/10/15 12:24:36 reconfig total time: 28.942282444s
+2023/10/15 12:28:24 reconfig event: Pod, falcon-pod-a04, Reconfig
+2023/10/15 12:28:25 update GPU availability: 270.572921ms
+2023/10/15 12:28:26 update device duration: 1.334106408s
+2023/10/15 12:28:32 unassign duration: 5.515064818s
+2023/10/15 12:28:43 assign duration: 11.010397422s
+2023/10/15 12:28:43 reconfig total time: 18.259999108s
+2023/10/16 07:28:01 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:14 update GPU availability: 12.800472702s
+2023/10/16 07:28:19 update device duration: 3.995681695s
+2023/10/16 07:28:27 unassign duration: 8.902172537s
+2023/10/16 07:28:43 assign duration: 15.554422477s
+2023/10/16 07:28:43 reconfig total time: 41.652501274s
+2023/10/16 07:28:43 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:44 update GPU availability: 998.062469ms
+2023/10/16 07:28:51 update device duration: 6.910771415s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:28:01 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:14 update GPU availability: 12.800472702s
+2023/10/16 07:28:19 update device duration: 3.995681695s
+2023/10/16 07:28:27 unassign duration: 8.902172537s
+2023/10/16 07:28:43 assign duration: 15.554422477s
+2023/10/16 07:28:43 reconfig total time: 41.652501274s
+2023/10/16 07:28:43 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:44 update GPU availability: 998.062469ms
+2023/10/16 07:28:51 update device duration: 6.910771415s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:41:04 reconfig event: Pod, falcon-pod-d04, Reconfig
+2023/10/16 07:28:19 update device duration: 3.995681695s
+2023/10/16 07:28:27 unassign duration: 8.902172537s
+2023/10/16 07:28:43 assign duration: 15.554422477s
+2023/10/16 07:28:43 reconfig total time: 41.652501274s
+2023/10/16 07:28:43 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:44 update GPU availability: 998.062469ms
+2023/10/16 07:28:51 update device duration: 6.910771415s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:41:04 reconfig event: Pod, falcon-pod-d04, Reconfig
+2023/10/16 07:41:04 update GPU availability: 202.577522ms
+2023/10/16 07:41:07 update device duration: 2.647890127s
+2023/10/16 07:41:14 unassign duration: 7.334089144s
+2023/10/16 07:41:29 assign duration: 15.349043765s
+2023/10/16 07:41:29 reconfig total time: 25.537835412s
+2023/10/16 07:28:19 update device duration: 3.995681695s
+2023/10/16 07:28:27 unassign duration: 8.902172537s
+2023/10/16 07:28:43 assign duration: 15.554422477s
+2023/10/16 07:28:43 reconfig total time: 41.652501274s
+2023/10/16 07:28:43 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:44 update GPU availability: 998.062469ms
+2023/10/16 07:28:51 update device duration: 6.910771415s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:41:04 reconfig event: Pod, falcon-pod-d04, Reconfig
+2023/10/16 07:41:04 update GPU availability: 202.577522ms
+2023/10/16 07:41:07 update device duration: 2.647890127s
+2023/10/16 07:41:14 unassign duration: 7.334089144s
+2023/10/16 07:41:29 assign duration: 15.349043765s
+2023/10/16 07:41:29 reconfig total time: 25.537835412s
+2023/10/16 07:28:19 update device duration: 3.995681695s
+2023/10/16 07:28:27 unassign duration: 8.902172537s
+2023/10/16 07:28:43 assign duration: 15.554422477s
+2023/10/16 07:28:43 reconfig total time: 41.652501274s
+2023/10/16 07:28:43 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:44 update GPU availability: 998.062469ms
+2023/10/16 07:28:51 update device duration: 6.910771415s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:41:04 reconfig event: Pod, falcon-pod-d04, Reconfig
+2023/10/16 07:41:04 update GPU availability: 202.577522ms
+2023/10/16 07:41:07 update device duration: 2.647890127s
+2023/10/16 07:41:14 unassign duration: 7.334089144s
+2023/10/16 07:41:29 assign duration: 15.349043765s
+2023/10/16 07:41:29 reconfig total time: 25.537835412s
+2023/10/16 07:28:19 update device duration: 3.995681695s
+2023/10/16 07:28:27 unassign duration: 8.902172537s
+2023/10/16 07:28:43 assign duration: 15.554422477s
+2023/10/16 07:28:43 reconfig total time: 41.652501274s
+2023/10/16 07:28:43 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:44 update GPU availability: 998.062469ms
+2023/10/16 07:28:51 update device duration: 6.910771415s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:41:04 reconfig event: Pod, falcon-pod-d04, Reconfig
+2023/10/16 07:41:04 update GPU availability: 202.577522ms
+2023/10/16 07:41:07 update device duration: 2.647890127s
+2023/10/16 07:41:14 unassign duration: 7.334089144s
+2023/10/16 07:41:29 assign duration: 15.349043765s
+2023/10/16 07:41:29 reconfig total time: 25.537835412s
+2023/10/16 07:28:19 update device duration: 3.995681695s
+2023/10/16 07:28:27 unassign duration: 8.902172537s
+2023/10/16 07:28:43 assign duration: 15.554422477s
+2023/10/16 07:28:43 reconfig total time: 41.652501274s
+2023/10/16 07:28:43 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:44 update GPU availability: 998.062469ms
+2023/10/16 07:28:51 update device duration: 6.910771415s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:41:04 reconfig event: Pod, falcon-pod-d04, Reconfig
+2023/10/16 07:41:04 update GPU availability: 202.577522ms
+2023/10/16 07:41:07 update device duration: 2.647890127s
+2023/10/16 07:41:14 unassign duration: 7.334089144s
+2023/10/16 07:41:29 assign duration: 15.349043765s
+2023/10/16 07:41:29 reconfig total time: 25.537835412s
+2023/10/16 07:28:19 update device duration: 3.995681695s
+2023/10/16 07:28:27 unassign duration: 8.902172537s
+2023/10/16 07:28:43 assign duration: 15.554422477s
+2023/10/16 07:28:43 reconfig total time: 41.652501274s
+2023/10/16 07:28:43 reconfig event: Pod, falcon-pod-b07, Reconfig
+2023/10/16 07:28:44 update GPU availability: 998.062469ms
+2023/10/16 07:28:51 update device duration: 6.910771415s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:41:04 reconfig event: Pod, falcon-pod-d04, Reconfig
+2023/10/16 07:41:04 update GPU availability: 202.577522ms
+2023/10/16 07:41:07 update device duration: 2.647890127s
+2023/10/16 07:41:14 unassign duration: 7.334089144s
+2023/10/16 07:41:29 assign duration: 15.349043765s
+2023/10/16 07:41:29 reconfig total time: 25.537835412s
+2023/10/16 07:29:00 unassign duration: 8.601920366s
+2023/10/16 07:29:14 assign duration: 13.943428124s
+2023/10/16 07:29:14 reconfig total time: 30.853824961s
+2023/10/16 07:41:04 reconfig event: Pod, falcon-pod-d04, Reconfig
+2023/10/16 07:41:04 update GPU availability: 202.577522ms
+2023/10/16 07:41:07 update device duration: 2.647890127s
+2023/10/16 07:41:14 unassign duration: 7.334089144s
+2023/10/16 07:41:29 assign duration: 15.349043765s
+2023/10/16 07:41:29 reconfig total time: 25.537835412s
+2023/10/16 07:50:47 reconfig event: Pod, falcon-pod-d05, Reconfig
+2023/10/16 07:50:48 update GPU availability: 1.60303938s
+2023/10/16 07:50:51 update device duration: 2.493663276s
+2023/10/16 07:50:58 unassign duration: 6.596271183s
+2023/10/16 07:51:14 assign duration: 15.910523003s
+2023/10/16 07:51:14 reconfig total time: 27.000084114s
+2023/10/16 07:57:09 reconfig event: Pod, falcon-pod-a04, Reconfig
+2023/10/16 07:57:09 reconfig event: Pod, falcon-pod-a04, Reconfig
+2023/10/16 07:57:20 update GPU availability: 10.799966509s
+2023/10/16 07:57:23 update device duration: 2.282013575s
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 07:57:09 reconfig event: Pod, falcon-pod-a04, Reconfig
+2023/10/16 07:57:20 update GPU availability: 10.799966509s
+2023/10/16 07:57:23 update device duration: 2.282013575s
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 07:57:09 reconfig event: Pod, falcon-pod-a04, Reconfig
+2023/10/16 07:57:20 update GPU availability: 10.799966509s
+2023/10/16 07:57:23 update device duration: 2.282013575s
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 08:02:02 reconfig event: Pod, falcon-pod-d02, Reconfig
+2023/10/16 08:02:03 update GPU availability: 800.281378ms
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 07:57:09 reconfig event: Pod, falcon-pod-a04, Reconfig
+2023/10/16 07:57:20 update GPU availability: 10.799966509s
+2023/10/16 07:57:23 update device duration: 2.282013575s
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 08:02:02 reconfig event: Pod, falcon-pod-d02, Reconfig
+2023/10/16 08:02:03 update GPU availability: 800.281378ms
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 08:02:02 reconfig event: Pod, falcon-pod-d02, Reconfig
+2023/10/16 08:02:03 update GPU availability: 800.281378ms
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 08:02:02 reconfig event: Pod, falcon-pod-d02, Reconfig
+2023/10/16 08:02:03 update GPU availability: 800.281378ms
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 08:02:02 reconfig event: Pod, falcon-pod-d02, Reconfig
+2023/10/16 08:02:03 update GPU availability: 800.281378ms
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 08:02:02 reconfig event: Pod, falcon-pod-d02, Reconfig
+2023/10/16 08:02:03 update GPU availability: 800.281378ms
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 07:57:30 unassign duration: 7.131052574s
+2023/10/16 07:57:43 assign duration: 13.088115853s
+2023/10/16 07:57:43 reconfig total time: 33.700569934s
+2023/10/16 08:02:02 reconfig event: Pod, falcon-pod-d02, Reconfig
+2023/10/16 08:02:03 update GPU availability: 800.281378ms
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 08:14:20 reconfig event: Pod, falcon-pod-e01, Reconfig
+2023/10/16 08:14:22 update GPU availability: 2.000399669s
+2023/10/16 08:14:25 update device duration: 2.504963561s
+2023/10/16 08:14:31 unassign duration: 5.654768622s
+2023/10/16 08:14:42 assign duration: 11.460826387s
+2023/10/16 08:14:42 reconfig total time: 22.020040278s
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 08:14:20 reconfig event: Pod, falcon-pod-e01, Reconfig
+2023/10/16 08:14:22 update GPU availability: 2.000399669s
+2023/10/16 08:14:25 update device duration: 2.504963561s
+2023/10/16 08:14:31 unassign duration: 5.654768622s
+2023/10/16 08:14:42 assign duration: 11.460826387s
+2023/10/16 08:14:42 reconfig total time: 22.020040278s
+2023/10/16 08:02:12 update device duration: 8.814758389s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 08:14:20 reconfig event: Pod, falcon-pod-e01, Reconfig
+2023/10/16 08:14:22 update GPU availability: 2.000399669s
+2023/10/16 08:14:25 update device duration: 2.504963561s
+2023/10/16 08:14:31 unassign duration: 5.654768622s
+2023/10/16 08:14:42 assign duration: 11.460826387s
+2023/10/16 08:14:42 reconfig total time: 22.020040278s
+2023/10/16 08:02:20 unassign duration: 8.460162742s
+2023/10/16 08:02:36 assign duration: 15.807330675s
+2023/10/16 08:02:36 reconfig total time: 34.283177826s
+2023/10/16 08:03:09 reconfig event: Pod, falcon-pod-c04, Reconfig
+2023/10/16 08:03:10 update GPU availability: 800.658321ms
+2023/10/16 08:03:14 update device duration: 4.011370091s
+2023/10/16 08:03:21 unassign duration: 7.085613819s
+2023/10/16 08:03:37 assign duration: 16.016408084s
+2023/10/16 08:03:37 reconfig total time: 28.313611986s
+2023/10/16 08:14:20 reconfig event: Pod, falcon-pod-e01, Reconfig
+2023/10/16 08:14:22 update GPU availability: 2.000399669s
+2023/10/16 08:14:25 update device duration: 2.504963561s
+2023/10/16 08:14:31 unassign duration: 5.654768622s
+2023/10/16 08:14:42 assign duration: 11.460826387s
+2023/10/16 08:14:42 reconfig total time: 22.020040278s
+2023/10/16 08:21:30 reconfig event: Pod, falcon-pod-a02, Reconfig

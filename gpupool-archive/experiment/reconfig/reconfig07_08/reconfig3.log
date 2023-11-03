@@ -1,0 +1,388 @@
+2023/10/04 06:02:19 dev: map[0-000500:0 0-000C00:0 0-001300:0 0-001800:0 1-000500:0 1-000C00:0 1-001300:0 1-001800:0]
+2023/10/04 06:02:19 reconfig event: Pod, falcon-pod-01, Reconfig
+already scheduled or done 
+2023/10/04 06:02:19 reconfig event: Pod, falcon-pod-01, Reconfig
+already scheduled or done 
+2023/10/04 06:02:19 reconfig event: Pod, falcon-pod-01, Reconfig
+already scheduled or done 
+2023/10/04 06:02:19 reconfig event: Pod, falcon-pod-02, Reconfig
+2023/10/04 06:02:19 pod name: falcon-pod-01, pod status: Succeeded
+2023/10/04 06:02:23 ready for reconfig
+2023/10/04 06:02:23 start to reconfig...
+2023/10/04 06:02:23 dst: css-host-129, require: 7
+2023/10/04 06:02:26 dev: map[0-000500:0 0-000C00:0 0-001300:0 0-001800:0 1-000500:0 1-000C00:0 1-001300:0 1-001800:0]
+2023/10/04 06:02:26 usedGPUs: map[], optionGPUs: []
+2023/10/04 06:02:26 reconfig result: false
+2023/10/04 06:02:28 reconfig event: Pod, falcon-pod-02, Reconfig
+2023/10/04 06:02:28 pod name: falcon-pod-01, pod status: Succeeded
+2023/10/04 06:02:31 ready for reconfig
+2023/10/04 06:02:32 start to reconfig...
+2023/10/04 06:02:32 dst: css-host-129, require: 7
+2023/10/04 06:02:37 dev: map[0-000500:0 0-000C00:0 0-001300:0 0-001800:0 1-000500:0 1-000C00:0 1-001300:0 1-001800:0]
+2023/10/04 06:02:37 usedGPUs: map[], optionGPUs: []
+2023/10/04 06:02:37 reconfig result: false
+2023/10/04 06:02:39 reconfig event: Pod, falcon-pod-02, Reconfig
+2023/10/04 06:02:39 pod name: falcon-pod-01, pod status: Succeeded
+2023/10/04 06:02:42 ready for reconfig
+2023/10/04 06:02:43 start to reconfig...
+2023/10/04 06:02:43 dst: css-host-129, require: 7
+2023/10/04 06:02:46 dev: map[0-000500:0 0-000C00:0 0-001300:0 0-001800:0 1-000500:0 1-000C00:0 1-001300:0 1-001800:0]
+2023/10/04 06:02:46 usedGPUs: map[], optionGPUs: []
+2023/10/04 06:02:46 reconfig result: false
+2023/10/04 06:09:04 reconfig event: Pod, falcon-pod-03, Reconfig
+2023/10/04 06:09:07 ready for reconfig
+2023/10/04 06:09:08 start to reconfig...
+2023/10/04 06:09:08 dst: css-host-128, require: 8
+2023/10/04 06:09:12 dev: map[0-000500:0 0-000C00:0 0-001300:0 0-001800:0 1-000500:0 1-000C00:0 1-001300:0 1-001800:0]
+2023/10/04 06:09:12 usedGPUs: map[], optionGPUs: [{0-000C00 0 0} {0-000500 0 0} {1-001300 0 0} {1-001800 0 0} {1-000C00 0 0} {1-000500 0 0} {0-001300 0 0} {0-001800 0 0}]
+2023/10/04 06:09:12 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:09:18 unassign result: true
+2023/10/04 06:09:18 assign -> gep: 0, port_gid: 30h, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:09:34 assign result: false
+2023/10/04 06:09:39 assign double check result: true
+2023/10/04 06:09:39 current demand: 7
+2023/10/04 06:09:39 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:09:45 unassign result: true
+2023/10/04 06:09:45 assign -> gep: 0, port_gid: 30h, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:09:59 assign result: false
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:10:05 assign double check result: true
+2023/10/04 06:10:05 current demand: 6
+2023/10/04 06:10:05 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:10:12 unassign result: true
+2023/10/04 06:10:12 assign -> gep: 0, port_gid: 30h, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:10:22 assign result: true
+2023/10/04 06:10:22 current demand: 5
+2023/10/04 06:10:22 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:10:29 unassign result: true
+2023/10/04 06:10:29 assign -> gep: 0, port_gid: 30h, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:10:38 assign result: true
+2023/10/04 06:10:38 current demand: 4
+2023/10/04 06:10:38 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:10:46 unassign result: true
+2023/10/04 06:10:46 assign -> gep: 0, port_gid: 30h, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:10:56 assign result: true
+2023/10/04 06:10:56 current demand: 3
+2023/10/04 06:10:56 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:11:03 unassign result: true
+2023/10/04 06:11:03 assign -> gep: 0, port_gid: 30h, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:11:12 assign result: true
+2023/10/04 06:11:12 current demand: 2
+2023/10/04 06:11:12 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:11:18 unassign result: true
+2023/10/04 06:11:18 assign -> gep: 0, port_gid: 30h, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:11:34 assign result: false
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:11:39 assign double check result: true
+2023/10/04 06:11:39 current demand: 1
+2023/10/04 06:11:39 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:11:45 unassign result: true
+2023/10/04 06:11:45 assign -> gep: 0, port_gid: 30h, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:12:00 assign result: false
+2023/10/04 06:12:05 assign double check result: true
+2023/10/04 06:12:05 current demand: 0
+2023/10/04 06:12:05 reconfig result: true
+2023/10/04 06:13:15 reconfig event: Pod, falcon-pod-02, Reconfig
+2023/10/04 06:13:15 pod name: falcon-pod-03, pod status: Succeeded
+2023/10/04 06:13:18 ready for reconfig
+2023/10/04 06:13:18 start to reconfig...
+2023/10/04 06:13:18 dst: css-host-129, require: 8
+2023/10/04 06:13:21 dev: map[0-000500:48 0-000C00:48 0-001300:48 0-001800:48 1-000500:48 1-000C00:48 1-001300:48 1-001800:48]
+2023/10/04 06:13:21 usedGPUs: map[], optionGPUs: [{0-000C00 48 0} {0-000500 48 0} {1-001300 48 0} {1-001800 48 0} {1-000C00 48 0} {1-000500 48 0} {0-001300 48 0} {0-001800 48 0}]
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:13:21 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:13:28 unassign result: true
+2023/10/04 06:13:28 assign -> gep: 0, port_gid: 00h, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:13:44 assign result: false
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:13:49 assign double check result: true
+2023/10/04 06:13:49 current demand: 7
+2023/10/04 06:13:49 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:13:56 unassign result: true
+2023/10/04 06:13:56 assign -> gep: 0, port_gid: 00h, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:14:11 assign result: false
+2023/10/04 06:14:17 assign double check result: true
+2023/10/04 06:14:17 current demand: 6
+2023/10/04 06:14:17 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:14:24 unassign result: true
+2023/10/04 06:14:24 assign -> gep: 0, port_gid: 00h, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:14:33 assign result: true
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:14:33 current demand: 5
+2023/10/04 06:14:33 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:14:41 unassign result: true
+2023/10/04 06:14:41 assign -> gep: 0, port_gid: 00h, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:14:50 assign result: true
+2023/10/04 06:14:50 current demand: 4
+2023/10/04 06:14:50 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:14:58 unassign result: true
+2023/10/04 06:14:58 assign -> gep: 0, port_gid: 00h, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:15:07 assign result: true
+2023/10/04 06:15:07 current demand: 3
+2023/10/04 06:15:07 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:15:14 unassign result: true
+2023/10/04 06:15:14 assign -> gep: 0, port_gid: 00h, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:15:24 assign result: true
+2023/10/04 06:15:24 current demand: 2
+2023/10/04 06:15:24 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:15:29 unassign result: true
+2023/10/04 06:15:29 assign -> gep: 0, port_gid: 00h, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:15:45 assign result: false
+2023/10/04 06:15:49 assign double check result: true
+2023/10/04 06:15:49 current demand: 1
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:15:49 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:15:56 unassign result: true
+2023/10/04 06:15:56 assign -> gep: 0, port_gid: 00h, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:16:09 assign result: false
+2023/10/04 06:16:14 assign double check result: true
+2023/10/04 06:16:14 current demand: 0
+2023/10/04 06:16:14 reconfig result: true
+2023/10/04 06:17:35 reconfig event: Pod, falcon-pod-03, Reconfig
+2023/10/04 06:17:38 ready for reconfig
+2023/10/04 06:17:38 start to reconfig...
+2023/10/04 06:17:38 dst: css-host-128, require: 8
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:17:42 dev: map[0-000500:0 0-000C00:0 0-001300:0 0-001800:0 1-000500:0 1-000C00:0 1-001300:0 1-001800:0]
+2023/10/04 06:17:42 usedGPUs: map[], optionGPUs: [{0-000500 0 0} {1-001300 0 0} {1-001800 0 0} {1-000C00 0 0} {1-000500 0 0} {0-001300 0 0} {0-001800 0 0} {0-000C00 0 0}]
+2023/10/04 06:17:42 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:17:48 unassign result: true
+2023/10/04 06:17:48 assign -> gep: 0, port_gid: 30h, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:18:04 assign result: false
+2023/10/04 06:18:09 assign double check result: true
+2023/10/04 06:18:09 current demand: 7
+2023/10/04 06:18:09 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:18:16 unassign result: true
+2023/10/04 06:18:16 assign -> gep: 0, port_gid: 30h, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:18:26 assign result: true
+2023/10/04 06:18:26 current demand: 6
+2023/10/04 06:18:26 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:18:33 unassign result: true
+2023/10/04 06:18:33 assign -> gep: 0, port_gid: 30h, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:18:43 assign result: true
+2023/10/04 06:18:43 current demand: 5
+2023/10/04 06:18:43 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:18:50 unassign result: true
+2023/10/04 06:18:50 assign -> gep: 0, port_gid: 30h, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:19:00 assign result: true
+2023/10/04 06:19:00 current demand: 4
+2023/10/04 06:19:00 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:19:08 unassign result: true
+2023/10/04 06:19:08 assign -> gep: 0, port_gid: 30h, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:19:18 assign result: true
+2023/10/04 06:19:18 current demand: 3
+2023/10/04 06:19:18 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:19:24 unassign result: true
+2023/10/04 06:19:24 assign -> gep: 0, port_gid: 30h, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:19:39 assign result: false
+2023/10/04 06:19:43 assign double check result: true
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:19:43 current demand: 2
+2023/10/04 06:19:43 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:19:49 unassign result: true
+2023/10/04 06:19:49 assign -> gep: 0, port_gid: 30h, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:20:06 assign result: false
+2023/10/04 06:20:11 assign double check result: true
+2023/10/04 06:20:11 current demand: 1
+2023/10/04 06:20:11 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:20:17 unassign result: true
+2023/10/04 06:20:17 assign -> gep: 0, port_gid: 30h, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:20:33 assign result: false
+2023/10/04 06:20:38 assign double check result: true
+2023/10/04 06:20:38 current demand: 0
+2023/10/04 06:20:38 reconfig result: true
+2023/10/04 06:21:45 reconfig event: Pod, falcon-pod-02, Reconfig
+2023/10/04 06:21:45 pod name: falcon-pod-03, pod status: Succeeded
+2023/10/04 06:21:49 ready for reconfig
+2023/10/04 06:21:49 start to reconfig...
+2023/10/04 06:21:49 dst: css-host-129, require: 8
+2023/10/04 06:21:52 dev: map[0-000500:48 0-000C00:48 0-001300:48 0-001800:48 1-000500:48 1-000C00:48 1-001300:48 1-001800:48]
+2023/10/04 06:21:52 usedGPUs: map[], optionGPUs: [{0-001300 48 0} {0-001800 48 0} {0-000C00 48 0} {0-000500 48 0} {1-001300 48 0} {1-001800 48 0} {1-000C00 48 0} {1-000500 48 0}]
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:21:52 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:21:58 unassign result: true
+2023/10/04 06:21:58 assign -> gep: 0, port_gid: 00h, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:22:13 assign result: false
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:22:18 assign double check result: true
+2023/10/04 06:22:18 current demand: 7
+2023/10/04 06:22:18 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:22:25 unassign result: true
+2023/10/04 06:22:25 assign -> gep: 0, port_gid: 00h, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:22:40 assign result: false
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:22:45 assign double check result: true
+2023/10/04 06:22:45 current demand: 6
+2023/10/04 06:22:45 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:22:51 unassign result: true
+2023/10/04 06:22:51 assign -> gep: 0, port_gid: 00h, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:23:07 assign result: false
+2023/10/04 06:23:12 assign double check result: true
+2023/10/04 06:23:12 current demand: 5
+2023/10/04 06:23:12 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:23:18 unassign result: true
+2023/10/04 06:23:18 assign -> gep: 0, port_gid: 00h, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:23:34 assign result: false
+2023/10/04 06:23:39 assign double check result: true
+2023/10/04 06:23:39 current demand: 4
+2023/10/04 06:23:39 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:23:47 unassign result: true
+2023/10/04 06:23:47 assign -> gep: 0, port_gid: 00h, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:23:57 assign result: true
+2023/10/04 06:23:57 current demand: 3
+2023/10/04 06:23:57 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:24:05 unassign result: true
+2023/10/04 06:24:05 assign -> gep: 0, port_gid: 00h, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:24:15 assign result: true
+2023/10/04 06:24:15 current demand: 2
+2023/10/04 06:24:15 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:24:23 unassign result: true
+2023/10/04 06:24:23 assign -> gep: 0, port_gid: 00h, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:24:33 assign result: true
+2023/10/04 06:24:33 current demand: 1
+2023/10/04 06:24:33 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:24:40 unassign result: true
+2023/10/04 06:24:40 assign -> gep: 0, port_gid: 00h, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:24:51 assign result: true
+2023/10/04 06:24:51 current demand: 0
+2023/10/04 06:24:51 reconfig result: true
+2023/10/04 06:26:06 reconfig event: Pod, falcon-pod-03, Reconfig
+2023/10/04 06:26:09 ready for reconfig
+2023/10/04 06:26:09 start to reconfig...
+2023/10/04 06:26:09 dst: css-host-128, require: 8
+2023/10/04 06:26:13 dev: map[0-000500:0 0-000C00:0 0-001300:0 0-001800:0 1-000500:0 1-000C00:0 1-001300:0 1-001800:0]
+2023/10/04 06:26:13 usedGPUs: map[], optionGPUs: [{0-001800 0 0} {0-000C00 0 0} {0-000500 0 0} {1-001300 0 0} {1-001800 0 0} {1-000C00 0 0} {1-000500 0 0} {0-001300 0 0}]
+2023/10/04 06:26:13 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:26:19 unassign result: true
+2023/10/04 06:26:19 assign -> gep: 0, port_gid: 30h, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:26:36 assign result: false
+2023/10/04 06:26:41 assign double check result: true
+2023/10/04 06:26:41 current demand: 7
+2023/10/04 06:26:41 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:26:47 unassign result: true
+2023/10/04 06:26:47 assign -> gep: 0, port_gid: 30h, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:27:02 assign result: false
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:27:07 assign double check result: true
+2023/10/04 06:27:07 current demand: 6
+2023/10/04 06:27:07 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:27:14 unassign result: true
+2023/10/04 06:27:14 assign -> gep: 0, port_gid: 30h, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:27:30 assign result: false
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:27:38 assign double check result: true
+2023/10/04 06:27:38 current demand: 5
+2023/10/04 06:27:38 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:27:44 unassign result: true
+2023/10/04 06:27:44 assign -> gep: 0, port_gid: 30h, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:27:54 assign result: true
+2023/10/04 06:27:54 current demand: 4
+2023/10/04 06:27:54 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:28:01 unassign result: true
+2023/10/04 06:28:01 assign -> gep: 0, port_gid: 30h, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:28:11 assign result: true
+2023/10/04 06:28:11 current demand: 3
+2023/10/04 06:28:11 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:28:18 unassign result: true
+2023/10/04 06:28:18 assign -> gep: 0, port_gid: 30h, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:28:30 assign result: true
+2023/10/04 06:28:30 current demand: 2
+2023/10/04 06:28:30 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:28:37 unassign result: true
+2023/10/04 06:28:37 assign -> gep: 0, port_gid: 30h, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:28:47 assign result: true
+2023/10/04 06:28:47 current demand: 1
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:28:47 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:28:53 unassign result: true
+2023/10/04 06:28:53 assign -> gep: 0, port_gid: 30h, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:29:07 assign result: false
+2023/10/04 06:29:13 assign double check result: true
+2023/10/04 06:29:13 current demand: 0
+2023/10/04 06:29:13 reconfig result: true
+2023/10/04 06:30:16 reconfig event: Pod, falcon-pod-02, Reconfig
+2023/10/04 06:30:16 pod name: falcon-pod-03, pod status: Succeeded
+2023/10/04 06:30:19 ready for reconfig
+2023/10/04 06:30:20 start to reconfig...
+2023/10/04 06:30:20 dst: css-host-129, require: 8
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:30:25 dev: map[0-000500:48 0-000C00:48 0-001300:48 0-001800:48 1-000500:48 1-000C00:48 1-001300:48 1-001800:48]
+2023/10/04 06:30:25 usedGPUs: map[], optionGPUs: [{1-000C00 48 0} {1-000500 48 0} {0-001300 48 0} {0-001800 48 0} {0-000C00 48 0} {0-000500 48 0} {1-001300 48 0} {1-001800 48 0}]
+2023/10/04 06:30:25 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:30:32 unassign result: true
+2023/10/04 06:30:32 assign -> gep: 0, port_gid: 00h, dev_gid: 000C00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:30:41 assign result: true
+2023/10/04 06:30:41 current demand: 7
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:30:41 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:30:49 unassign result: true
+2023/10/04 06:30:49 assign -> gep: 0, port_gid: 00h, dev_gid: 000500, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:31:00 assign result: true
+2023/10/04 06:31:00 current demand: 6
+2023/10/04 06:31:00 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:31:06 unassign result: true
+2023/10/04 06:31:06 assign -> gep: 0, port_gid: 00h, dev_gid: 001300, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:31:21 assign result: false
+2023/10/04 06:31:30 assign double check result: true
+2023/10/04 06:31:30 current demand: 5
+2023/10/04 06:31:30 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:31:40 unassign result: true
+2023/10/04 06:31:40 assign -> gep: 0, port_gid: 00h, dev_gid: 001800, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:31:56 assign result: false
+2023/10/04 06:32:01 assign double check result: true
+2023/10/04 06:32:01 current demand: 4
+&{{"gep" : "0", "dev_gid" : "000C00"} 0 -1}
+2023/10/04 06:32:01 unassign -> gep: 0, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:32:07 unassign result: true
+2023/10/04 06:32:07 assign -> gep: 0, port_gid: 00h, dev_gid: 000C00, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:32:23 assign result: false
+2023/10/04 06:32:28 assign double check result: true
+2023/10/04 06:32:28 current demand: 3
+2023/10/04 06:32:28 unassign -> gep: 0, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+&{{"gep" : "0", "dev_gid" : "000500"} 0 -1}
+2023/10/04 06:32:34 unassign result: true
+2023/10/04 06:32:34 assign -> gep: 0, port_gid: 00h, dev_gid: 000500, endpoint: http://9.2.130.147:80/h3api/v1/allocation
+2023/10/04 06:32:50 assign result: false
+&{{"gep" : "0", "dev_gid" : "001300"} 0 -1}
+2023/10/04 06:32:55 assign double check result: true
+2023/10/04 06:32:55 current demand: 2
+2023/10/04 06:32:55 unassign -> gep: 0, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:33:01 unassign result: true
+2023/10/04 06:33:01 assign -> gep: 0, port_gid: 00h, dev_gid: 001300, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:33:11 assign result: true
+2023/10/04 06:33:11 current demand: 1
+&{{"gep" : "0", "dev_gid" : "001800"} 0 -1}
+2023/10/04 06:33:11 unassign -> gep: 0, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:33:19 unassign result: true
+2023/10/04 06:33:19 assign -> gep: 0, port_gid: 00h, dev_gid: 001800, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/10/04 06:33:29 assign result: true
+2023/10/04 06:33:29 current demand: 0
+2023/10/04 06:33:29 reconfig result: true
