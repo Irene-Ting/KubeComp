@@ -1,0 +1,470 @@
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    annotations:
+      use_falcon: "true"
+    creationTimestamp: "2023-09-19T05:41:12Z"
+    name: falcon-pod-06
+    namespace: default
+    resourceVersion: "23500158"
+    uid: aa9c12a8-f505-4e7c-8e66-b320b8360700
+  spec:
+    containers:
+    - command:
+      - sh
+      - -c
+      - echo "start" && /bin/gpu-run 1 60
+      image: gpu-test:test
+      imagePullPolicy: Never
+      name: falcon-pod-06
+      resources:
+        limits:
+          cpu: "1"
+          falcon.com/gpu: "1"
+          memory: 500Mi
+        requests:
+          cpu: "1"
+          falcon.com/gpu: "1"
+          memory: 500Mi
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-sl9nd
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    nodeName: css-host-129
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Never
+    schedulerName: my-scheduler
+    securityContext: {}
+    serviceAccount: default
+    serviceAccountName: default
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - name: kube-api-access-sl9nd
+      projected:
+        defaultMode: 420
+        sources:
+        - serviceAccountToken:
+            expirationSeconds: 3607
+            path: token
+        - configMap:
+            items:
+            - key: ca.crt
+              path: ca.crt
+            name: kube-root-ca.crt
+        - downwardAPI:
+            items:
+            - fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+              path: namespace
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:41:12Z"
+      reason: PodCompleted
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:42:18Z"
+      reason: PodCompleted
+      status: "False"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:42:18Z"
+      reason: PodCompleted
+      status: "False"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:41:12Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: docker://a5ae809df8bc68f17f5688c8b43cf9e0fd1f298c98c9c7bfc0e2f81c6126c049
+      image: gpu-test:test
+      imageID: docker://sha256:d9a17819cdd977ac459d174c17ed07f2fbb4d171cc9c5b7ab417323788019738
+      lastState: {}
+      name: falcon-pod-06
+      ready: false
+      restartCount: 0
+      started: false
+      state:
+        terminated:
+          containerID: docker://a5ae809df8bc68f17f5688c8b43cf9e0fd1f298c98c9c7bfc0e2f81c6126c049
+          exitCode: 0
+          finishedAt: "2023-09-19T05:42:17Z"
+          reason: Completed
+          startedAt: "2023-09-19T05:41:16Z"
+    hostIP: 9.2.131.129
+    phase: Succeeded
+    podIP: 10.32.0.9
+    podIPs:
+    - ip: 10.32.0.9
+    qosClass: Guaranteed
+    startTime: "2023-09-19T05:41:12Z"
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    annotations:
+      use_falcon: "true"
+    creationTimestamp: "2023-09-19T05:41:22Z"
+    name: falcon-pod-07
+    namespace: default
+    resourceVersion: "23500182"
+    uid: 56033037-0ee6-434a-8c6c-a20284cf75af
+  spec:
+    containers:
+    - command:
+      - sh
+      - -c
+      - echo "start" && /bin/gpu-run 2 60
+      image: gpu-test:test
+      imagePullPolicy: Never
+      name: falcon-pod-07
+      resources:
+        limits:
+          cpu: "1"
+          falcon.com/gpu: "2"
+          memory: 500Mi
+        requests:
+          cpu: "1"
+          falcon.com/gpu: "2"
+          memory: 500Mi
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-wx7z6
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    nodeName: css-host-128
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Never
+    schedulerName: my-scheduler
+    securityContext: {}
+    serviceAccount: default
+    serviceAccountName: default
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - name: kube-api-access-wx7z6
+      projected:
+        defaultMode: 420
+        sources:
+        - serviceAccountToken:
+            expirationSeconds: 3607
+            path: token
+        - configMap:
+            items:
+            - key: ca.crt
+              path: ca.crt
+            name: kube-root-ca.crt
+        - downwardAPI:
+            items:
+            - fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+              path: namespace
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:41:22Z"
+      reason: PodCompleted
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:42:30Z"
+      reason: PodCompleted
+      status: "False"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:42:30Z"
+      reason: PodCompleted
+      status: "False"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:41:22Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: docker://a2e73e0590eebc0551f5693970dea168f90c6d30d4c5c80e10a6e98b217413ce
+      image: gpu-test:test
+      imageID: docker://sha256:9d4abacbaae0cd6d0a8ddf1831a6a12758423841bead4cd3bb03665b4e37e2b4
+      lastState: {}
+      name: falcon-pod-07
+      ready: false
+      restartCount: 0
+      started: false
+      state:
+        terminated:
+          containerID: docker://a2e73e0590eebc0551f5693970dea168f90c6d30d4c5c80e10a6e98b217413ce
+          exitCode: 0
+          finishedAt: "2023-09-19T05:42:30Z"
+          reason: Completed
+          startedAt: "2023-09-19T05:41:28Z"
+    hostIP: 9.2.131.128
+    phase: Succeeded
+    podIP: 10.44.0.6
+    podIPs:
+    - ip: 10.44.0.6
+    qosClass: Guaranteed
+    startTime: "2023-09-19T05:41:22Z"
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    annotations:
+      use_falcon: "true"
+    creationTimestamp: "2023-09-19T05:41:33Z"
+    name: falcon-pod-08
+    namespace: default
+    resourceVersion: "23500555"
+    uid: 8366c144-5395-4ddc-ae88-201ff24f9644
+  spec:
+    containers:
+    - command:
+      - sh
+      - -c
+      - echo "start" && /bin/gpu-run 4 300
+      image: gpu-test:test
+      imagePullPolicy: Never
+      name: falcon-pod-08
+      resources:
+        limits:
+          cpu: "1"
+          falcon.com/gpu: "4"
+          memory: 500Mi
+        requests:
+          cpu: "1"
+          falcon.com/gpu: "4"
+          memory: 500Mi
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-22wxp
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    nodeName: css-host-128
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Never
+    schedulerName: my-scheduler
+    securityContext: {}
+    serviceAccount: default
+    serviceAccountName: default
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - name: kube-api-access-22wxp
+      projected:
+        defaultMode: 420
+        sources:
+        - serviceAccountToken:
+            expirationSeconds: 3607
+            path: token
+        - configMap:
+            items:
+            - key: ca.crt
+              path: ca.crt
+            name: kube-root-ca.crt
+        - downwardAPI:
+            items:
+            - fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+              path: namespace
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:41:33Z"
+      reason: PodCompleted
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:46:41Z"
+      reason: PodCompleted
+      status: "False"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:46:41Z"
+      reason: PodCompleted
+      status: "False"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:41:33Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: docker://1aebf0dc5a74111f1b2c1e1fc5cb4ebba4c68fd75aff341e29ed6ea206ac198a
+      image: gpu-test:test
+      imageID: docker://sha256:9d4abacbaae0cd6d0a8ddf1831a6a12758423841bead4cd3bb03665b4e37e2b4
+      lastState: {}
+      name: falcon-pod-08
+      ready: false
+      restartCount: 0
+      started: false
+      state:
+        terminated:
+          containerID: docker://1aebf0dc5a74111f1b2c1e1fc5cb4ebba4c68fd75aff341e29ed6ea206ac198a
+          exitCode: 0
+          finishedAt: "2023-09-19T05:46:41Z"
+          reason: Completed
+          startedAt: "2023-09-19T05:41:37Z"
+    hostIP: 9.2.131.128
+    phase: Succeeded
+    podIP: 10.44.0.7
+    podIPs:
+    - ip: 10.44.0.7
+    qosClass: Guaranteed
+    startTime: "2023-09-19T05:41:33Z"
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    annotations:
+      dst_node: css-host-129
+      gpu_demand: "2"
+      use_falcon: "true"
+    creationTimestamp: "2023-09-19T05:41:43Z"
+    name: falcon-pod-09
+    namespace: default
+    resourceVersion: "23500473"
+    uid: f51e78d1-5b77-43b9-88de-2729c3c7fe38
+  spec:
+    containers:
+    - command:
+      - sh
+      - -c
+      - echo "start" && /bin/gpu-run 4 120
+      image: gpu-test:test
+      imagePullPolicy: Never
+      name: falcon-pod-09
+      resources:
+        limits:
+          cpu: "1"
+          falcon.com/gpu: "4"
+          memory: 500Mi
+        requests:
+          cpu: "1"
+          falcon.com/gpu: "4"
+          memory: 500Mi
+      terminationMessagePath: /dev/termination-log
+      terminationMessagePolicy: File
+      volumeMounts:
+      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+        name: kube-api-access-rbhhx
+        readOnly: true
+    dnsPolicy: ClusterFirst
+    enableServiceLinks: true
+    nodeName: css-host-129
+    preemptionPolicy: PreemptLowerPriority
+    priority: 0
+    restartPolicy: Never
+    schedulerName: my-scheduler
+    securityContext: {}
+    serviceAccount: default
+    serviceAccountName: default
+    terminationGracePeriodSeconds: 30
+    tolerations:
+    - effect: NoExecute
+      key: node.kubernetes.io/not-ready
+      operator: Exists
+      tolerationSeconds: 300
+    - effect: NoExecute
+      key: node.kubernetes.io/unreachable
+      operator: Exists
+      tolerationSeconds: 300
+    volumes:
+    - name: kube-api-access-rbhhx
+      projected:
+        defaultMode: 420
+        sources:
+        - serviceAccountToken:
+            expirationSeconds: 3607
+            path: token
+        - configMap:
+            items:
+            - key: ca.crt
+              path: ca.crt
+            name: kube-root-ca.crt
+        - downwardAPI:
+            items:
+            - fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+              path: namespace
+  status:
+    conditions:
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:43:35Z"
+      reason: PodCompleted
+      status: "True"
+      type: Initialized
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:45:45Z"
+      reason: PodCompleted
+      status: "False"
+      type: Ready
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:45:45Z"
+      reason: PodCompleted
+      status: "False"
+      type: ContainersReady
+    - lastProbeTime: null
+      lastTransitionTime: "2023-09-19T05:43:35Z"
+      status: "True"
+      type: PodScheduled
+    containerStatuses:
+    - containerID: docker://902b06d6db44665f7272603cd84706895ecdb9d14b9827d2e43c006077f4462c
+      image: gpu-test:test
+      imageID: docker://sha256:d9a17819cdd977ac459d174c17ed07f2fbb4d171cc9c5b7ab417323788019738
+      lastState: {}
+      name: falcon-pod-09
+      ready: false
+      restartCount: 0
+      started: false
+      state:
+        terminated:
+          containerID: docker://902b06d6db44665f7272603cd84706895ecdb9d14b9827d2e43c006077f4462c
+          exitCode: 0
+          finishedAt: "2023-09-19T05:45:45Z"
+          reason: Completed
+          startedAt: "2023-09-19T05:43:40Z"
+    hostIP: 9.2.131.129
+    phase: Succeeded
+    podIP: 10.32.0.9
+    podIPs:
+    - ip: 10.32.0.9
+    qosClass: Guaranteed
+    startTime: "2023-09-19T05:43:35Z"

@@ -1,0 +1,268 @@
+2023/10/12 06:30:32 falconresources-scheduler starts!
+I1012 06:30:32.701566       1 flags.go:64] FLAG: --allow-metric-labels="[]"
+I1012 06:30:32.701581       1 flags.go:64] FLAG: --authentication-kubeconfig=""
+I1012 06:30:32.701587       1 flags.go:64] FLAG: --authentication-skip-lookup="false"
+I1012 06:30:32.701592       1 flags.go:64] FLAG: --authentication-token-webhook-cache-ttl="10s"
+I1012 06:30:32.701598       1 flags.go:64] FLAG: --authentication-tolerate-lookup-failure="true"
+I1012 06:30:32.701603       1 flags.go:64] FLAG: --authorization-always-allow-paths="[/healthz,/readyz,/livez]"
+I1012 06:30:32.701612       1 flags.go:64] FLAG: --authorization-kubeconfig=""
+I1012 06:30:32.701616       1 flags.go:64] FLAG: --authorization-webhook-cache-authorized-ttl="10s"
+I1012 06:30:32.701621       1 flags.go:64] FLAG: --authorization-webhook-cache-unauthorized-ttl="10s"
+I1012 06:30:32.701626       1 flags.go:64] FLAG: --bind-address="0.0.0.0"
+I1012 06:30:32.701631       1 flags.go:64] FLAG: --cert-dir=""
+I1012 06:30:32.701636       1 flags.go:64] FLAG: --client-ca-file=""
+I1012 06:30:32.701640       1 flags.go:64] FLAG: --config="/etc/kubernetes/scheduler-config.yaml"
+I1012 06:30:32.701645       1 flags.go:64] FLAG: --contention-profiling="true"
+I1012 06:30:32.701650       1 flags.go:64] FLAG: --disabled-metrics="[]"
+I1012 06:30:32.701674       1 flags.go:64] FLAG: --feature-gates=""
+I1012 06:30:32.701679       1 flags.go:64] FLAG: --help="false"
+I1012 06:30:32.701683       1 flags.go:64] FLAG: --http2-max-streams-per-connection="0"
+I1012 06:30:32.701689       1 flags.go:64] FLAG: --kube-api-burst="100"
+I1012 06:30:32.701695       1 flags.go:64] FLAG: --kube-api-content-type="application/vnd.kubernetes.protobuf"
+I1012 06:30:32.701699       1 flags.go:64] FLAG: --kube-api-qps="50"
+I1012 06:30:32.701705       1 flags.go:64] FLAG: --kubeconfig=""
+I1012 06:30:32.701709       1 flags.go:64] FLAG: --leader-elect="true"
+I1012 06:30:32.701714       1 flags.go:64] FLAG: --leader-elect-lease-duration="15s"
+I1012 06:30:32.701718       1 flags.go:64] FLAG: --leader-elect-renew-deadline="10s"
+I1012 06:30:32.701723       1 flags.go:64] FLAG: --leader-elect-resource-lock="leases"
+I1012 06:30:32.701727       1 flags.go:64] FLAG: --leader-elect-resource-name="kube-scheduler"
+I1012 06:30:32.701732       1 flags.go:64] FLAG: --leader-elect-resource-namespace="kube-system"
+I1012 06:30:32.701736       1 flags.go:64] FLAG: --leader-elect-retry-period="2s"
+I1012 06:30:32.701741       1 flags.go:64] FLAG: --lock-object-name="kube-scheduler"
+I1012 06:30:32.701745       1 flags.go:64] FLAG: --lock-object-namespace="kube-system"
+I1012 06:30:32.701749       1 flags.go:64] FLAG: --log-flush-frequency="5s"
+I1012 06:30:32.701754       1 flags.go:64] FLAG: --logging-format="text"
+I1012 06:30:32.701761       1 flags.go:64] FLAG: --master=""
+I1012 06:30:32.701765       1 flags.go:64] FLAG: --permit-address-sharing="false"
+I1012 06:30:32.701769       1 flags.go:64] FLAG: --permit-port-sharing="false"
+I1012 06:30:32.701774       1 flags.go:64] FLAG: --pod-max-in-unschedulable-pods-duration="5m0s"
+I1012 06:30:32.701778       1 flags.go:64] FLAG: --profiling="true"
+I1012 06:30:32.701783       1 flags.go:64] FLAG: --requestheader-allowed-names="[]"
+I1012 06:30:32.701789       1 flags.go:64] FLAG: --requestheader-client-ca-file=""
+I1012 06:30:32.701793       1 flags.go:64] FLAG: --requestheader-extra-headers-prefix="[x-remote-extra-]"
+I1012 06:30:32.701803       1 flags.go:64] FLAG: --requestheader-group-headers="[x-remote-group]"
+I1012 06:30:32.701810       1 flags.go:64] FLAG: --requestheader-username-headers="[x-remote-user]"
+I1012 06:30:32.701818       1 flags.go:64] FLAG: --secure-port="10259"
+I1012 06:30:32.701823       1 flags.go:64] FLAG: --show-hidden-metrics-for-version=""
+I1012 06:30:32.701827       1 flags.go:64] FLAG: --tls-cert-file=""
+I1012 06:30:32.701832       1 flags.go:64] FLAG: --tls-cipher-suites="[]"
+I1012 06:30:32.701839       1 flags.go:64] FLAG: --tls-min-version=""
+I1012 06:30:32.701843       1 flags.go:64] FLAG: --tls-private-key-file=""
+I1012 06:30:32.701848       1 flags.go:64] FLAG: --tls-sni-cert-key="[]"
+I1012 06:30:32.701862       1 flags.go:64] FLAG: --v="2"
+I1012 06:30:32.701870       1 flags.go:64] FLAG: --version="false"
+I1012 06:30:32.701880       1 flags.go:64] FLAG: --vmodule=""
+I1012 06:30:32.701885       1 flags.go:64] FLAG: --write-config-to=""
+I1012 06:30:33.150764       1 serving.go:348] Generated self-signed cert in-memory
+I1012 06:30:33.151807       1 configfile.go:59] "KubeSchedulerConfiguration v1beta3 is deprecated in v1.26, will be removed in v1.29"
+W1012 06:30:33.151919       1 client_config.go:618] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I1012 06:30:33.447141       1 requestheader_controller.go:244] Loaded a new request header values for RequestHeaderAuthRequestController
+I1012 06:30:33.457853       1 configfile.go:105] "Using component config" config=<
+	apiVersion: kubescheduler.config.k8s.io/v1beta3
+	clientConnection:
+	  acceptContentTypes: ""
+	  burst: 100
+	  contentType: application/vnd.kubernetes.protobuf
+	  kubeconfig: ""
+	  qps: 50
+	enableContentionProfiling: true
+	enableProfiling: true
+	kind: KubeSchedulerConfiguration
+	leaderElection:
+	  leaderElect: false
+	  leaseDuration: 15s
+	  renewDeadline: 10s
+	  resourceLock: leases
+	  resourceName: kube-scheduler
+	  resourceNamespace: kube-system
+	  retryPeriod: 2s
+	parallelism: 16
+	percentageOfNodesToScore: 0
+	podInitialBackoffSeconds: 1
+	podMaxBackoffSeconds: 10
+	profiles:
+	- pluginConfig:
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      kind: DefaultPreemptionArgs
+	      minCandidateNodesAbsolute: 100
+	      minCandidateNodesPercentage: 10
+	    name: DefaultPreemption
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      hardPodAffinityWeight: 1
+	      ignorePreferredTermsOfExistingPods: false
+	      kind: InterPodAffinityArgs
+	    name: InterPodAffinity
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      kind: NodeAffinityArgs
+	    name: NodeAffinity
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      kind: NodeResourcesBalancedAllocationArgs
+	      resources:
+	      - name: cpu
+	        weight: 1
+	      - name: memory
+	        weight: 1
+	    name: NodeResourcesBalancedAllocation
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      ignoredResourceGroups:
+	      - falcon.com
+	      kind: NodeResourcesFitArgs
+	      scoringStrategy:
+	        resources:
+	        - name: cpu
+	          weight: 1
+	        - name: memory
+	          weight: 1
+	        type: LeastAllocated
+	    name: NodeResourcesFit
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      defaultingType: System
+	      kind: PodTopologySpreadArgs
+	    name: PodTopologySpread
+	  - args:
+	      apiVersion: kubescheduler.config.k8s.io/v1beta3
+	      bindTimeoutSeconds: 600
+	      kind: VolumeBindingArgs
+	    name: VolumeBinding
+	  plugins:
+	    bind: {}
+	    filter: {}
+	    multiPoint:
+	      enabled:
+	      - name: PrioritySort
+	        weight: 0
+	      - name: NodeUnschedulable
+	        weight: 0
+	      - name: NodeName
+	        weight: 0
+	      - name: TaintToleration
+	        weight: 3
+	      - name: NodeAffinity
+	        weight: 2
+	      - name: NodePorts
+	        weight: 0
+	      - name: NodeResourcesFit
+	        weight: 1
+	      - name: VolumeRestrictions
+	        weight: 0
+	      - name: EBSLimits
+	        weight: 0
+	      - name: GCEPDLimits
+	        weight: 0
+	      - name: NodeVolumeLimits
+	        weight: 0
+	      - name: AzureDiskLimits
+	        weight: 0
+	      - name: VolumeBinding
+	        weight: 0
+	      - name: VolumeZone
+	        weight: 0
+	      - name: PodTopologySpread
+	        weight: 2
+	      - name: InterPodAffinity
+	        weight: 2
+	      - name: DefaultPreemption
+	        weight: 0
+	      - name: NodeResourcesBalancedAllocation
+	        weight: 1
+	      - name: ImageLocality
+	        weight: 1
+	      - name: DefaultBinder
+	        weight: 0
+	      - name: SchedulingGates
+	        weight: 0
+	      - name: FalconResources
+	        weight: 0
+	    permit: {}
+	    postBind: {}
+	    postFilter: {}
+	    preBind: {}
+	    preEnqueue: {}
+	    preFilter: {}
+	    preScore: {}
+	    queueSort: {}
+	    reserve: {}
+	    score: {}
+	  schedulerName: my-scheduler
+ >
+I1012 06:30:33.458138       1 server.go:154] "Starting Kubernetes Scheduler" version="v0.0.0-master+$Format:%H$"
+I1012 06:30:33.458146       1 server.go:156] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I1012 06:30:33.462218       1 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+I1012 06:30:33.462258       1 shared_informer.go:311] Waiting for caches to sync for RequestHeaderAuthRequestController
+I1012 06:30:33.462273       1 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+I1012 06:30:33.462380       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1012 06:30:33.462368       1 configmap_cafile_content.go:202] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+I1012 06:30:33.462512       1 shared_informer.go:311] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1012 06:30:33.462849       1 tlsconfig.go:200] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1697092233\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1697092232\" (2023-10-12 05:30:32 +0000 UTC to 2024-10-11 05:30:32 +0000 UTC (now=2023-10-12 06:30:33.462786599 +0000 UTC))"
+I1012 06:30:33.463572       1 named_certificates.go:53] "Loaded SNI cert" index=0 certName="self-signed loopback" certDetail="\"apiserver-loopback-client@1697092233\" [serving] validServingFor=[apiserver-loopback-client] issuer=\"apiserver-loopback-client-ca@1697092233\" (2023-10-12 05:30:33 +0000 UTC to 2024-10-11 05:30:33 +0000 UTC (now=2023-10-12 06:30:33.463531431 +0000 UTC))"
+I1012 06:30:33.463618       1 secure_serving.go:210] Serving securely on [::]:10259
+I1012 06:30:33.463674       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1012 06:30:33.472309       1 node_tree.go:65] "Added node in listed group to NodeTree" node="css-host-128" zone=""
+I1012 06:30:33.472600       1 node_tree.go:65] "Added node in listed group to NodeTree" node="css-host-129" zone=""
+I1012 06:30:33.563165       1 shared_informer.go:318] Caches are synced for RequestHeaderAuthRequestController
+I1012 06:30:33.563263       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+I1012 06:30:33.563302       1 shared_informer.go:318] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+I1012 06:30:33.563717       1 tlsconfig.go:178] "Loaded client CA" index=0 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"front-proxy-ca\" [] validServingFor=[front-proxy-ca] issuer=\"<self>\" (2023-02-25 05:20:25 +0000 UTC to 2033-02-22 05:20:25 +0000 UTC (now=2023-10-12 06:30:33.563666546 +0000 UTC))"
+I1012 06:30:33.564488       1 tlsconfig.go:200] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1697092233\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1697092232\" (2023-10-12 05:30:32 +0000 UTC to 2024-10-11 05:30:32 +0000 UTC (now=2023-10-12 06:30:33.564453438 +0000 UTC))"
+I1012 06:30:33.565169       1 named_certificates.go:53] "Loaded SNI cert" index=0 certName="self-signed loopback" certDetail="\"apiserver-loopback-client@1697092233\" [serving] validServingFor=[apiserver-loopback-client] issuer=\"apiserver-loopback-client-ca@1697092233\" (2023-10-12 05:30:33 +0000 UTC to 2024-10-11 05:30:33 +0000 UTC (now=2023-10-12 06:30:33.565109483 +0000 UTC))"
+I1012 06:30:33.565308       1 tlsconfig.go:178] "Loaded client CA" index=0 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"kubernetes\" [] validServingFor=[kubernetes] issuer=\"<self>\" (2023-02-25 05:20:24 +0000 UTC to 2033-02-22 05:20:24 +0000 UTC (now=2023-10-12 06:30:33.565273231 +0000 UTC))"
+I1012 06:30:33.565356       1 tlsconfig.go:178] "Loaded client CA" index=1 certName="client-ca::kube-system::extension-apiserver-authentication::client-ca-file,client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file" certDetail="\"front-proxy-ca\" [] validServingFor=[front-proxy-ca] issuer=\"<self>\" (2023-02-25 05:20:25 +0000 UTC to 2033-02-22 05:20:25 +0000 UTC (now=2023-10-12 06:30:33.565326531 +0000 UTC))"
+I1012 06:30:33.566035       1 tlsconfig.go:200] "Loaded serving cert" certName="Generated self signed cert" certDetail="\"localhost@1697092233\" [serving] validServingFor=[127.0.0.1,localhost,localhost] issuer=\"localhost-ca@1697092232\" (2023-10-12 05:30:32 +0000 UTC to 2024-10-11 05:30:32 +0000 UTC (now=2023-10-12 06:30:33.566008906 +0000 UTC))"
+I1012 06:30:33.566717       1 named_certificates.go:53] "Loaded SNI cert" index=0 certName="self-signed loopback" certDetail="\"apiserver-loopback-client@1697092233\" [serving] validServingFor=[apiserver-loopback-client] issuer=\"apiserver-loopback-client-ca@1697092233\" (2023-10-12 05:30:33 +0000 UTC to 2024-10-11 05:30:33 +0000 UTC (now=2023-10-12 06:30:33.566691762 +0000 UTC))"
+I1012 06:46:47.560019       1 log.go:194] falcon-pod-01 in Prefilter
+I1012 06:46:47.560043       1 log.go:194] falcon-pod-01 requires 1 gpu(s), and currently has 8 gpus(s) in total
+I1012 06:46:47.568834       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-01 requires 1 gpu -> score: 25
+I1012 06:46:47.568915       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-01 requires 1 gpu -> score: 25
+I1012 06:46:47.575938       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1012 06:46:47.604440       1 log.go:194] falcon-pod-02 in Prefilter
+I1012 06:46:47.604467       1 log.go:194] falcon-pod-02 requires 1 gpu(s), and currently has 7 gpus(s) in total
+I1012 06:46:47.609979       1 log.go:194] css-host-128 has 3 gpu, falcon-pod-02 requires 1 gpu -> score: 33
+I1012 06:46:47.610071       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-02 requires 1 gpu -> score: 25
+I1012 06:46:47.616712       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-02" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1012 06:46:47.662601       1 log.go:194] falcon-pod-03 in Prefilter
+I1012 06:46:47.662619       1 log.go:194] falcon-pod-03 requires 1 gpu(s), and currently has 6 gpus(s) in total
+I1012 06:46:47.668081       1 log.go:194] css-host-128 has 2 gpu, falcon-pod-03 requires 1 gpu -> score: 50
+I1012 06:46:47.668100       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-03 requires 1 gpu -> score: 25
+I1012 06:46:47.674617       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-03" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1012 06:46:47.707865       1 log.go:194] falcon-pod-04 in Prefilter
+I1012 06:46:47.707886       1 log.go:194] falcon-pod-04 requires 1 gpu(s), and currently has 5 gpus(s) in total
+I1012 06:46:47.711768       1 log.go:194] css-host-128 has 1 gpu, falcon-pod-04 requires 1 gpu -> score: 100
+I1012 06:46:47.711804       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-04 requires 1 gpu -> score: 25
+I1012 06:46:47.718372       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-04" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1012 06:46:47.745555       1 log.go:194] falcon-pod-05 in Prefilter
+I1012 06:46:47.745566       1 log.go:194] falcon-pod-05 requires 1 gpu(s), and currently has 4 gpus(s) in total
+I1012 06:46:47.750394       1 log.go:194] css-host-128 has 0 gpu, falcon-pod-05 requires 1 gpu -> score: -1
+I1012 06:46:47.750427       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-05 requires 1 gpu -> score: 25
+I1012 06:46:47.757093       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-05" node="css-host-129" evaluatedNodes=2 feasibleNodes=2
+I1012 06:46:47.796764       1 log.go:194] falcon-pod-06 in Prefilter
+I1012 06:46:47.796774       1 log.go:194] falcon-pod-06 requires 1 gpu(s), and currently has 3 gpus(s) in total
+I1012 06:46:47.802221       1 log.go:194] css-host-128 has 0 gpu, falcon-pod-06 requires 1 gpu -> score: -1
+I1012 06:46:47.802242       1 log.go:194] css-host-129 has 3 gpu, falcon-pod-06 requires 1 gpu -> score: 33
+I1012 06:46:47.964376       1 log.go:194] falcon-pod-07 in Prefilter
+I1012 06:46:47.964397       1 log.go:194] falcon-pod-07 requires 1 gpu(s), and currently has 2 gpus(s) in total
+I1012 06:46:47.967983       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-06" node="css-host-129" evaluatedNodes=2 feasibleNodes=2
+I1012 06:46:48.167047       1 log.go:194] css-host-128 has 0 gpu, falcon-pod-07 requires 1 gpu -> score: -1
+I1012 06:46:48.167082       1 log.go:194] css-host-129 has 2 gpu, falcon-pod-07 requires 1 gpu -> score: 50
+I1012 06:46:48.167347       1 trace.go:219] Trace[823064529]: "Scheduling" namespace:default,name:falcon-pod-07 (12-Oct-2023 06:46:47.964) (total time: 202ms):
+Trace[823064529]: ---"Computing predicates done" 202ms (06:46:48.166)
+Trace[823064529]: [202.984646ms] [202.984646ms] END
+I1012 06:46:48.365370       1 log.go:194] falcon-pod-08 in Prefilter
+I1012 06:46:48.365389       1 log.go:194] falcon-pod-08 requires 1 gpu(s), and currently has 1 gpus(s) in total
+I1012 06:46:48.370415       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-07" node="css-host-129" evaluatedNodes=2 feasibleNodes=2
+I1012 06:46:48.568560       1 log.go:194] css-host-128 has 0 gpu, falcon-pod-08 requires 1 gpu -> score: -1
+I1012 06:46:48.568654       1 log.go:194] css-host-129 has 1 gpu, falcon-pod-08 requires 1 gpu -> score: 100
+I1012 06:46:48.568826       1 trace.go:219] Trace[358664945]: "Scheduling" namespace:default,name:falcon-pod-08 (12-Oct-2023 06:46:48.365) (total time: 203ms):
+Trace[358664945]: ---"Computing predicates done" 203ms (06:46:48.568)
+Trace[358664945]: [203.480156ms] [203.480156ms] END
+I1012 06:46:48.768302       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-08" node="css-host-129" evaluatedNodes=2 feasibleNodes=2
+I1012 07:04:18.842242       1 log.go:194] falcon-pod-01-default in Prefilter
+I1012 07:04:18.842278       1 log.go:194] falcon-pod-01-default requires 0 gpu(s), and currently has 8 gpus(s) in total
+I1012 07:04:18.849285       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-01-default requires 0 gpu -> score: 0
+I1012 07:04:18.849314       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-01-default requires 0 gpu -> score: 0
+I1012 07:04:18.857567       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01-default" node="css-host-128" evaluatedNodes=2 feasibleNodes=2

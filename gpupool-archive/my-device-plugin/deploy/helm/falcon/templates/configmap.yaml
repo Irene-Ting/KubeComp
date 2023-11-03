@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: falcon-topo
+  namespace: {{ .Values.namespace }}
+data:
+  device-plugin-config.yaml: |
+    num_of_node: {{ .Values.configMap.num_of_node }}
+    local_ips: {{ .Values.configMap.local_ips }}
+    host_ports: {{ .Values.configMap.host_ports }}
+    api_endpoint: {{ .Values.configMap.api_endpoint }}

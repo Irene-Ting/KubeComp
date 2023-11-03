@@ -1,0 +1,4 @@
+namespace: kube-system
+
+configMap:
+  api_endpoint: http://9.2.131.151:80/h3api/

@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: falcon-pod-b11
+spec:
+  schedulerName: my-scheduler
+  containers:
+  - name: falcon-pod-b11
+    image: "gpu-test:test"
+    imagePullPolicy: Never
+    command: ['sh', '-c', 'echo "start" && /bin/gpu-run 1 300']
+    resources:
+      requests:
+        memory: "500Mi"
+        cpu: "40"
+        falcon.com/gpu: "1"
+      limits:
+        memory: "500Mi"
+        cpu: "40"
+        falcon.com/gpu: "1"
+  restartPolicy: OnFailure
+  

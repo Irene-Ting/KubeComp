@@ -1,0 +1,27 @@
+# Default values for falcon-device-plugin.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: irenetht/my-device-plugin
+  # pullPolicy: Always
+  pullPolicy: Never
+
+namespace: kube-system
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: falcon-admin
+
+configMap:
+  num_of_node: 2
+  local_ips: 9.2.131.129,9.2.131.128
+  host_ports: 0,48
+  api_endpoint: http://9.2.131.151:80/h3api/
+
+

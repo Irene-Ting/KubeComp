@@ -1,0 +1,100 @@
+I1003 07:51:08.162656       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 07:54:12.062439       1 log.go:194] falcon-pod-02 in Prefilter
+I1003 07:54:12.062948       1 log.go:194] falcon-pod-02 requires 4 gpu(s), and currently has 8 gpus(s) in total
+I1003 07:54:12.070507       1 log.go:194] css-host-128 has 7 gpu, falcon-pod-02 requires 4 gpu -> score: 57
+I1003 07:54:12.070532       1 log.go:194] css-host-129 has 1 gpu, falcon-pod-02 requires 4 gpu -> score: -3
+I1003 07:54:12.078500       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-02" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 07:54:39.755644       1 log.go:194] falcon-pod-03 in Prefilter
+I1003 07:54:39.756099       1 log.go:194] falcon-pod-03 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I1003 07:54:39.774568       1 event.go:307] "Event occurred" object="default/falcon-pod-03" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-03 needs reconfiguration"
+I1003 07:56:13.764131       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-03" node="css-host-129" evaluatedNodes=2 feasibleNodes=1
+I1003 07:57:32.515339       1 log.go:194] falcon-pod-01 in Prefilter
+I1003 07:57:32.516049       1 log.go:194] falcon-pod-01 requires 7 gpu(s), and currently has 8 gpus(s) in total
+I1003 07:57:32.523143       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-01 requires 7 gpu -> score: -3
+I1003 07:57:32.523194       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-01 requires 7 gpu -> score: -3
+I1003 07:57:32.534694       1 event.go:307] "Event occurred" object="default/falcon-pod-01" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-01 needs reconfiguration"
+I1003 07:59:09.718361       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:00:18.093310       1 log.go:194] falcon-pod-02 in Prefilter
+I1003 08:00:18.093651       1 log.go:194] falcon-pod-02 requires 4 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:00:18.100849       1 log.go:194] css-host-128 has 7 gpu, falcon-pod-02 requires 4 gpu -> score: 57
+I1003 08:00:18.100888       1 log.go:194] css-host-129 has 1 gpu, falcon-pod-02 requires 4 gpu -> score: -3
+I1003 08:00:18.114767       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-02" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:02:49.707953       1 log.go:194] falcon-pod-03 in Prefilter
+I1003 08:02:49.708579       1 log.go:194] falcon-pod-03 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I1003 08:02:49.728485       1 event.go:307] "Event occurred" object="default/falcon-pod-03" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-03 needs reconfiguration"
+I1003 08:04:23.671241       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-03" node="css-host-129" evaluatedNodes=2 feasibleNodes=1
+I1003 08:06:44.810838       1 log.go:194] falcon-pod-01 in Prefilter
+I1003 08:06:44.811382       1 log.go:194] falcon-pod-01 requires 7 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:06:44.816544       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-01 requires 7 gpu -> score: -3
+I1003 08:06:44.816579       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-01 requires 7 gpu -> score: -3
+I1003 08:06:44.843195       1 event.go:307] "Event occurred" object="default/falcon-pod-01" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-01 needs reconfiguration"
+I1003 08:08:22.459331       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:09:23.003346       1 log.go:194] falcon-pod-02 in Prefilter
+I1003 08:09:23.003826       1 log.go:194] falcon-pod-02 requires 4 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:09:23.010263       1 log.go:194] css-host-128 has 7 gpu, falcon-pod-02 requires 4 gpu -> score: 57
+I1003 08:09:23.010299       1 log.go:194] css-host-129 has 1 gpu, falcon-pod-02 requires 4 gpu -> score: -3
+I1003 08:09:23.018846       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-02" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:09:51.451055       1 log.go:194] falcon-pod-03 in Prefilter
+I1003 08:09:51.451551       1 log.go:194] falcon-pod-03 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I1003 08:09:51.472297       1 event.go:307] "Event occurred" object="default/falcon-pod-03" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-03 needs reconfiguration"
+I1003 08:11:32.854624       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-03" node="css-host-129" evaluatedNodes=2 feasibleNodes=1
+I1003 08:25:21.219581       1 log.go:194] falcon-pod-01 in Prefilter
+I1003 08:25:21.220124       1 log.go:194] falcon-pod-01 requires 7 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:25:21.227633       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-01 requires 7 gpu -> score: -3
+I1003 08:25:21.227765       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-01 requires 7 gpu -> score: -3
+I1003 08:25:21.244147       1 event.go:307] "Event occurred" object="default/falcon-pod-01" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-01 needs reconfiguration"
+I1003 08:27:04.018522       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:28:28.326206       1 log.go:194] falcon-pod-02 in Prefilter
+I1003 08:28:28.326685       1 log.go:194] falcon-pod-02 requires 4 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:28:28.333946       1 log.go:194] css-host-128 has 7 gpu, falcon-pod-02 requires 4 gpu -> score: 57
+I1003 08:28:28.333997       1 log.go:194] css-host-129 has 1 gpu, falcon-pod-02 requires 4 gpu -> score: -3
+I1003 08:28:28.347880       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-02" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:28:43.748834       1 log.go:194] falcon-pod-03 in Prefilter
+I1003 08:28:43.749318       1 log.go:194] falcon-pod-03 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I1003 08:28:43.770429       1 event.go:307] "Event occurred" object="default/falcon-pod-03" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-03 needs reconfiguration"
+I1003 08:30:35.961334       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-03" node="css-host-129" evaluatedNodes=2 feasibleNodes=1
+I1003 08:32:06.951487       1 log.go:194] falcon-pod-01 in Prefilter
+I1003 08:32:06.952029       1 log.go:194] falcon-pod-01 requires 8 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:32:06.957692       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-01 requires 8 gpu -> score: -4
+I1003 08:32:06.957716       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-01 requires 8 gpu -> score: -4
+I1003 08:32:06.968861       1 event.go:307] "Event occurred" object="default/falcon-pod-01" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-01 needs reconfiguration"
+I1003 08:34:16.661234       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:37:13.750000       1 log.go:194] falcon-pod-02 in Prefilter
+I1003 08:37:13.750525       1 log.go:194] falcon-pod-02 requires 4 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:37:13.758044       1 log.go:194] css-host-129 has 0 gpu, falcon-pod-02 requires 4 gpu -> score: -4
+I1003 08:37:13.758077       1 log.go:194] css-host-128 has 8 gpu, falcon-pod-02 requires 4 gpu -> score: 50
+I1003 08:37:13.766541       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-02" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:37:42.977984       1 log.go:194] falcon-pod-03 in Prefilter
+I1003 08:37:42.978449       1 log.go:194] falcon-pod-03 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I1003 08:37:42.998158       1 event.go:307] "Event occurred" object="default/falcon-pod-03" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-03 needs reconfiguration"
+I1003 08:39:48.683404       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-03" node="css-host-129" evaluatedNodes=2 feasibleNodes=1
+I1003 08:42:35.112387       1 log.go:194] falcon-pod-01 in Prefilter
+I1003 08:42:35.112923       1 log.go:194] falcon-pod-01 requires 8 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:42:35.119644       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-01 requires 8 gpu -> score: -4
+I1003 08:42:35.119686       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-01 requires 8 gpu -> score: -4
+I1003 08:42:35.130503       1 event.go:307] "Event occurred" object="default/falcon-pod-01" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-01 needs reconfiguration"
+I1003 08:44:40.452691       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:46:16.776528       1 log.go:194] falcon-pod-02 in Prefilter
+I1003 08:46:16.777000       1 log.go:194] falcon-pod-02 requires 4 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:46:16.784261       1 log.go:194] css-host-129 has 0 gpu, falcon-pod-02 requires 4 gpu -> score: -4
+I1003 08:46:16.784354       1 log.go:194] css-host-128 has 8 gpu, falcon-pod-02 requires 4 gpu -> score: 50
+I1003 08:46:16.793040       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-02" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:46:47.197767       1 log.go:194] falcon-pod-03 in Prefilter
+I1003 08:46:47.198216       1 log.go:194] falcon-pod-03 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I1003 08:46:47.216334       1 event.go:307] "Event occurred" object="default/falcon-pod-03" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-03 needs reconfiguration"
+I1003 08:48:50.037061       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-03" node="css-host-129" evaluatedNodes=2 feasibleNodes=1
+I1003 08:49:59.569927       1 log.go:194] falcon-pod-01 in Prefilter
+I1003 08:49:59.570387       1 log.go:194] falcon-pod-01 requires 8 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:49:59.577529       1 log.go:194] css-host-128 has 4 gpu, falcon-pod-01 requires 8 gpu -> score: -4
+I1003 08:49:59.577558       1 log.go:194] css-host-129 has 4 gpu, falcon-pod-01 requires 8 gpu -> score: -4
+I1003 08:49:59.589474       1 event.go:307] "Event occurred" object="default/falcon-pod-01" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-01 needs reconfiguration"
+I1003 08:52:00.441972       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-01" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:53:00.394652       1 log.go:194] falcon-pod-02 in Prefilter
+I1003 08:53:00.395049       1 log.go:194] falcon-pod-02 requires 4 gpu(s), and currently has 8 gpus(s) in total
+I1003 08:53:00.402429       1 log.go:194] css-host-128 has 8 gpu, falcon-pod-02 requires 4 gpu -> score: 50
+I1003 08:53:00.402483       1 log.go:194] css-host-129 has 0 gpu, falcon-pod-02 requires 4 gpu -> score: -4
+I1003 08:53:00.411198       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-02" node="css-host-128" evaluatedNodes=2 feasibleNodes=2
+I1003 08:53:31.755478       1 log.go:194] falcon-pod-03 in Prefilter
+I1003 08:53:31.755986       1 log.go:194] falcon-pod-03 requires 4 gpu(s), and currently has 4 gpus(s) in total
+I1003 08:53:31.790878       1 event.go:307] "Event occurred" object="default/falcon-pod-03" fieldPath="" kind="Pod" apiVersion="v1" type="Normal" reason="Reconfig" message="Pod falcon-pod-03 needs reconfiguration"
+I1003 08:55:39.093644       1 schedule_one.go:252] "Successfully bound pod to node" pod="default/falcon-pod-03" node="css-host-129" evaluatedNodes=2 feasibleNodes=1

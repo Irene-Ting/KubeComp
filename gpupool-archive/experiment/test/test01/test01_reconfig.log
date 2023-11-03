@@ -1,0 +1,39 @@
+2023/09/16 13:04:59 init: map[0-000500:48 0-000C00:48 0-001300:48 0-001800:48 1-000500:0 1-001A00:0 1-002F00:48 1-004200:48]
+2023/09/16 13:04:59 reconfig event: Pod, falcon-pod-398210, Reconfig
+pod falcon-pod-381278 is scheduled
+pod falcon-pod-398210 is scheduled
+pod falcon-pod-399023 is scheduled
+pod falcon-pod-458562 is scheduled
+pod falcon-pod-502950 is scheduled
+pod falcon-pod-519337 is scheduled
+pod falcon-pod-534716 is scheduled
+pod falcon-pod-581104 is scheduled
+pod falcon-pod-593250 is scheduled
+pod falcon-pod-867106 is scheduled
+2023/09/16 13:05:06 ready for reconfig, schedulePods: map[08badd6c-f98d-4e6a-bf4f-374804b20426:{} 0f527e25-1f20-4da2-94b6-1d19328d4428:{} 1f67b4e2-3914-42cd-a884-2c0cbf394776:{} 77d4f7eb-e7c1-4d53-b8bd-c51d90861560:{} 8b289398-48b0-463a-bbd9-b47138c0b5b6:{} c59f4428-df0c-49b0-a816-1b0e53521699:{} e6d5a5c5-967e-454f-a3f4-df41f3e3f621:{} f5c0cf98-a69c-4650-906a-7d65bae262a4:{} f7616e67-8447-4d40-a236-9ecfd88f8687:{}]
+2023/09/16 13:05:06 start to reconfig...
+2023/09/16 13:05:06 dst: css-host-128, require: 2
+&{{"gep" : "0", "dev_gid" : "001A00"} 0 -1}
+2023/09/16 13:05:06 unassign:
+2023/09/16 13:05:06 gep: 0, dev_gid: 001A00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+2023/09/16 13:05:09 unassign resp body: {
+  "action": "unassign",
+  "result": [ true ],
+  "remark": "done"
+}
+2023/09/16 13:05:09 unassign resp: {unassign [true] done}
+2023/09/16 13:05:09 assign:
+2023/09/16 13:05:09 gep: 0, port_gid: 30h, dev_gid: 001A00, endpoint: http://9.2.130.148:80/h3api/v1/allocation
+panic: Post "http://9.2.130.148:80/h3api/v1/allocation": net/http: HTTP/1.x transport connection broken: unexpected EOF
+
+goroutine 244 [running]:
+main.(*ReconfigDaemon).assign(0xc000812e10, {0x15c2048, 0x1}, {0x15c239d, 0x3}, {0xc0002afc0a, 0x6}, {0x15e9472, 0x29})
+	/home/lsalab/gpupool-with-k8s/reconfig_daemon/main.go:159 +0x5e6
+main.(*ReconfigDaemon).reconfig(0xc000812e10, {0xc0006a7240, 0xc}, 0x2)
+	/home/lsalab/gpupool-with-k8s/reconfig_daemon/main.go:323 +0x826
+main.(*ReconfigDaemon).watchReconfigEvent(0xc000812e10, 0xc0002958c0?)
+	/home/lsalab/gpupool-with-k8s/reconfig_daemon/main.go:434 +0x3d5
+main.main.func1()
+	/home/lsalab/gpupool-with-k8s/reconfig_daemon/main.go:538 +0x25
+created by main.main
+	/home/lsalab/gpupool-with-k8s/reconfig_daemon/main.go:537 +0x185

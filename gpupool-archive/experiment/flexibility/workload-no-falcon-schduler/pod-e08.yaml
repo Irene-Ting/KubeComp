@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: falcon-pod-e08
+spec:
+  containers:
+  - name: falcon-pod-e08
+    image: "gpu-test:test"
+    imagePullPolicy: Never
+    command: ['sh', '-c', 'echo "start" && /bin/gpu-run 8 300']
+    resources:
+      requests:
+        memory: "500Mi"
+        cpu: "40"
+        falcon.com/gpu: "8"
+      limits:
+        memory: "500Mi"
+        cpu: "40"
+        falcon.com/gpu: "8"
+  restartPolicy: OnFailure
+  
