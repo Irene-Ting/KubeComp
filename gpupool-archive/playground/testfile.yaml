@@ -1,4 +1,0 @@
-num_of_node: "2"
-local_ips: "9.2.131.129,9.2.131.128"
-geps: "0,2"
-api_endpoint: "http://9.2.131.151:80/h3api/"

@@ -1,3 +1,0 @@
-helm install -f values.yaml prometheus prometheus-community/prometheus --create-namespace --namespace monitoring
-helm upgrade -f values.yaml prometheus prometheus-community/prometheus --namespace monitoring --install
-helm uninstall prometheus -n monitoring
